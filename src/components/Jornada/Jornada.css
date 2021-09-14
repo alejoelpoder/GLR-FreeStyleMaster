@@ -1,0 +1,19 @@
+.jornada-container {
+    display: flex;
+}
+.nombreContainer:nth-child(1) {
+    margin-top: 20px;
+}
+
+.jornada-data-element {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.dataContainer {
+    display: flex;
+}
+.dataContainer td {
+    color: #fff;
+}

@@ -1,10 +1,10 @@
 // import './JornadaItem.css'
 
-const JornadaItem = ({puesto, nombre}) => {
+const JornadaItem = ({info}) => {
 
     return (
         <>
-            <td>{`${puesto}. ${nombre}`}</td>
+            <td>{info}</td>
         </>
     )
 }
