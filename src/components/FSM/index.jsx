@@ -1,6 +1,8 @@
 import './FSM.css'
 import { Switch, useParams } from "react-router";
 import Header from '../bloques/Header';
+import Participantes from '../bloques/Participantes';
+import TablaPosiciones from '../bloques/TablaPosiciones';
 
 const FSM = () => {
 
@@ -21,7 +23,8 @@ const FSM = () => {
         <>
             <body>
                 {paisSelect(pais)}
-                <h2>lol</h2>
+                <Participantes />
+                <TablaPosiciones />
             </body>
         </>
     )

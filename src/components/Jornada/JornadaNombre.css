@@ -1,0 +1,7 @@
+.nombreContainer {
+    display: flex;
+    flex-direction: column;
+}
+.nombreContainer td {
+    color: #fff;
+}
