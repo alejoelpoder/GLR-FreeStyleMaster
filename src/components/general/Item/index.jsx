@@ -3,10 +3,10 @@ import './Item.css'
 const Item = ({nombre, foto}) => {
 
     return (
-        <>
+        <div className={'participante-box'}>
+            <img className={'participantes-foto'} src={foto} alt="foto" />
             <h3>{nombre}</h3>
-            <img src={foto} alt="foto" />
-        </>
+        </div>
     )
 }
 

@@ -1,0 +1,15 @@
+
+.container-hydj {
+    height: 330px;
+}
+.container-hydj ul {
+    height: 290px;
+    padding: 0;
+    width: 448px;
+    margin: 0 auto;
+}
+.container-hydj .participante-box {
+    width: 188px;
+    margin: 18px;
+    float: left;
+}

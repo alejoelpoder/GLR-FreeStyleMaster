@@ -1,19 +1,69 @@
 .jornada-container {
     display: flex;
+    background-color: #0000008f;
+    position: relative;
+}
+.jornada-container form {
+    position: absolute;
+    left: 50%;
+    margin-left: -490px;
+    top: 20px;
+    font-family: 'Montserrat-Medium', arial;
+}
+.jornada-container form select {
+    height: 35px;
+    width: 145px;
+    padding-left: 10px;
+    border-radius: 20px;
+    background-color: #46a1da;
+    border: none;
+    color: #fff;
 }
 .nombreContainer:nth-child(1) {
     margin-top: 20px;
 }
 
-.jornada-data-element {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-}
-
 .dataContainer {
     display: flex;
+    padding-left: 25px;
 }
 .dataContainer td {
     color: #fff;
+    margin-bottom: 10px;
+}
+.dataContainer {
+    border-right: solid 1px #fff;
+}
+.dataContainer:nth-child(2) {
+    border-right: none
+}
+
+.dataContainer td span {
+    height: 25px;
+}
+.jornada-data-element {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-right: 0;
+}
+.jornada-data-element .jornadaItem-puesto {
+    display: none;
+}
+.jornada-data-element{
+    margin-top: -10px;
+}
+.jornada-data-element td span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jornada-data-element .jornadaItem {
+    display: flex;
+    justify-content: center;
+}
+
+.row-name {
+    border-right: solid 2px #fff;
+    padding: 0 17px;
 }

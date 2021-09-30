@@ -6,8 +6,8 @@ const Participantes = () => {
     
     return (
         <>
-            <div className="container-b">
-                <TituloBloque titulo={'PARTICIPANTES'} />
+            <div className="container-participantes container-b">
+                <TituloBloque titulo={'PARTICIPANTES'} classBloque={'participantes'} />
                 <DisplayParticipantes />
             </div>
         </>

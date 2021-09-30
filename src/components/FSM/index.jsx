@@ -1,30 +1,28 @@
 import './FSM.css'
-import { Switch, useParams } from "react-router";
 import Header from '../bloques/Header';
 import Participantes from '../bloques/Participantes';
 import TablaPosiciones from '../bloques/TablaPosiciones';
+import Evolutivo from '../bloques/Evolutivo';
+import Jurado from '../bloques/Jurado';
+import HostyDj from '../bloques/HostYDj';
+import Podcast from '../bloques/Podcast';
+import BatallaRecomendada from '../bloques/BatallaRecomendada';
+import Glosario from '../bloques/Glosario';
 
 const FSM = () => {
-
-    const {pais} = useParams();
-
-    const paisSelect = (cat) => {
-        switch(cat) {
-            case 'peru': return <Header titulo={'Perú'} />;
-            case 'chile': return <Header titulo={'Chile'} />;
-            case 'españa': return <Header titulo={'España'} />;
-            case 'mexico': return <Header titulo={'México'} />;
-            case 'argentina': return <Header titulo={'Argentina'} />;
-            default: return <p className="hola">La categoría no existe</p>;
-        }
-    }
 
     return (
         <>
             <body>
-                {paisSelect(pais)}
+                <Header />
                 <Participantes />
                 <TablaPosiciones />
+                <Evolutivo />
+                <Jurado />
+                <HostyDj />
+                <Podcast />
+                <BatallaRecomendada />
+                <Glosario />
             </body>
         </>
     )

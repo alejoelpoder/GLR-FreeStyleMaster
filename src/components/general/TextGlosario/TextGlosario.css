@@ -1,0 +1,11 @@
+.glosario-tit {
+    color: #fff;
+    font-family: 'Montserrat-Medium', arial;
+}
+.glosario-container {
+    display: flex;
+}
+.glosario-text {
+    margin: 0;
+    width: 450px;
+}

@@ -6,8 +6,8 @@ const TablaPosiciones = () => {
 
     return (
         <>
-            <div className="container-b">
-                <TituloBloque titulo={'TABLA DE POSICIONES'} />
+            <div className="container-posiciones container-b">
+                <TituloBloque titulo={'TABLA DE POSICIONES'} classBloque={'posiciones'} />
                 <Jornada />
             </div>
         </>

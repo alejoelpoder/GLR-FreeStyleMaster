@@ -1,3 +1,62 @@
 h2 {
     color: #fff;
+    font-family: 'Montserrat-Medium', arial;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #000;
+    letter-spacing: 2px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 3px;
+    background-color: #2475a8;
+    top: 12px;
+    left: 10px;
+}
+
+.titulo-argentina::after {
+    background-color: #2475a8;
+}
+.titulo-peru::after {
+    background-color: #5a0404;
+}
+.titulo-chile::after {
+    background-color: #040f40;
+}
+.titulo-españa::after {
+    background-color: #900909;
+}
+.titulo-mexico::after {
+    background-color: #23c541;
+}
+
+.bloque-participantes {
+    width: 220px;
+}
+.bloque-posiciones {
+    width: 337px;
+}
+.bloque-evolutivo {
+    width: 170px;
+}
+.bloque-jurado {
+    width: 130px;
+}
+.bloque-hostydj {
+    width: 166px;
+}
+.bloque-noticias {
+    width: 398px;
+}
+.bloque-podcast {
+    width: 415px;
+}
+.bloque-batalla {
+    width: 371px;
+}
+.bloque-glosario {
+    width: 183px;
 }

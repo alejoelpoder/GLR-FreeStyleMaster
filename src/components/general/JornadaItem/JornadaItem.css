@@ -1,0 +1,6 @@
+.jornadaItem {
+    display: flex;
+}
+.jornadaItem-puesto {
+    text-align: center;
+}

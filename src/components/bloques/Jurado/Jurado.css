@@ -1,0 +1,15 @@
+
+.container-jurado {
+    height: 330px;
+}
+.container-jurado ul {
+    height: 290px;
+    padding: 0;
+    width: 1120px;
+    margin: 0 auto;
+}
+.container-jurado .participante-box {
+    width: 188px;
+    margin: 18px;
+    float: left;
+}

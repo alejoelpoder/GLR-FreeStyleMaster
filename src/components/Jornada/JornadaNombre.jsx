@@ -16,7 +16,8 @@ const JornadaNombre = ({participantes}) => {
                             participantes.filter(item => item.router == pais).map((item, i) => (
                                 <JornadaItem
                                     key={i}
-                                    info={`${item.id}. ${item.nombre}`}
+                                    info={item.nombre}
+                                    puesto={`${item.id}. `}
                                 />
                             ))
                         }

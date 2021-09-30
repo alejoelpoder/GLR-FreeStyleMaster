@@ -19,54 +19,62 @@ const DisplayParticipantes = () => {
 
     const participantesPeru = [
         {nombre: 'peruNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruACERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruPEPE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'perTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'perLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'peruJOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruTOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'perWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'peruJOQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'peruRODAMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'peruANUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'peruERREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'}
+        {nombre: 'peruRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'peruOTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'peruANOTHER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
     ]
 
     const participantesEspaña = [
         {nombre: 'españaNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'españaACERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaPEPE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'espE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'españaJOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaTOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaJOQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaRODAMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaANUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaERREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'españaRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'}
+        {nombre: 'espaOWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'espOQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'espMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'espUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'españaREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'españaRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'españaOTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'espaTHER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
     ]
 
     const participantesMexico = [
-        {nombre: 'mexicoNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoACERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoPEPE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoJOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoTOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoJOQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoRODAMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoANUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoERREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'mexicoRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'}
+        {nombre: 'meTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexiERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexicoILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexiERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexiMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexiEKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexCTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'meTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'mexiOTHER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
     ]
 
     const participantesArgentina = [
-        {nombre: 'argentinaNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaACERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaPEPE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaJOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaTOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaJOQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaRODAMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaANUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaERREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'argentinaRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'}
+        {nombre: 'argeTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenRTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'arTOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argeQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argentRREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argenTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'argentTHER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
     ]
 
     const participantesChile = [
@@ -79,7 +87,9 @@ const DisplayParticipantes = () => {
         {nombre: 'RODAMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'ANUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
         {nombre: 'ERREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'RICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'}
+        {nombre: 'RICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'OTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'ANOTHER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
     ]
     
     return (
@@ -87,12 +97,11 @@ const DisplayParticipantes = () => {
             <ul>
                 {
                     paisParticipante(pais).map(item => (
-                        <li key={item.id}>
-                            <Item 
-                                nombre={item.nombre}
-                                foto={item.foto}
-                            />
-                        </li>
+                        <Item 
+                            key={item.id}
+                            nombre={item.nombre}
+                            foto={item.foto}
+                        />
                     ))
                 }
             </ul>
