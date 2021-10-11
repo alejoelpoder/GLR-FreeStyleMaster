@@ -17,11 +17,11 @@ const DisplayJurado = () => {
     }
 
     const juradoPeru = [
-        {nombre: 'peruNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruACERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruPEPE GRILLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruJOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruTOM CROWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'FOX',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_61647fc386b3d06d090b2c2e.jpg'},
+        {nombre: 'GCR',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_61647fceecc4c71a5059990e.jpg'},
+        {nombre: 'HBD',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_61647fde0025c73b950f8313.jpg'},
+        {nombre: 'JORO',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164800074f3f35da80bbdb5.jpg'},
+        {nombre: 'VELLUTINO',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164800b2d519b204b51ba80.jpg'},
     ]
 
     const juradoEspaña = [

@@ -11,7 +11,8 @@ header ul li {
     list-style: none;
     margin: 5px;
     text-align: center;
-    border-right: solid 1px #fff;
+    /* border-right: solid 1px #fff; */
+    width: 100%;
 }
 header ul li:nth-child(4) {
     border-right: none;
@@ -54,3 +55,42 @@ header p {
 .ultima-fecha-mexico {
     background-color: #23c541;
 }
+
+
+@media (max-width: 768px) {
+    header img {
+        width: 700px;
+        margin: 20px auto 0;
+    }
+    header p {
+        margin: 16px auto 0;
+        width: 380px;
+        font-size: 14px !important;
+    }
+    header .arg {
+        margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header ul {
+        width: 95%;
+        font-size: 12px;
+        border-radius: 0;
+    }
+    header ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header img {
+        width: 350px;
+        margin: 20px auto 0;
+    }
+    header p {
+        margin: 13px auto 0;
+        width: 290px;
+        font-size: 11px !important;
+    }
+  }
+  

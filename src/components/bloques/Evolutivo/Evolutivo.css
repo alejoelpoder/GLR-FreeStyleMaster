@@ -1,6 +1,6 @@
 .flourish-embed-iframe {
-    width: 70%;
-    height: 550px;
+    width: 95%;
+    height: 660px;
     margin: 0 auto;
     display: block;
 }
@@ -15,3 +15,17 @@
 .imgFlourish {
     width:105px!important;height:16px!important;border:none!important;margin:0!important;
 }
+
+@media (max-width: 768px) {
+    .flourish-embed-iframe {
+        width: 90%;
+        height: 470px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .flourish-embed-iframe {
+        width: 90%;
+        height: 400px;
+    }
+  }

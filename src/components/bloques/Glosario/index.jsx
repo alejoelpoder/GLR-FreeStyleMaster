@@ -1,3 +1,4 @@
+import './Glosario.css'
 import TituloBloque from '../../general/TituloBloque';
 import DisplayGlosario from '../../DisplayGlosario';
 
@@ -35,10 +36,18 @@ const Glosario = () => {
     
     return (
         <>
-            <div className="container-b">
+            <div className="container-glosario container-b">
                 <TituloBloque titulo={'GLOSARIO'} classBloque={'glosario'} />
-                <DisplayGlosario GlosarioContent={Content_1}  />
-                <DisplayGlosario GlosarioContent={Content_2} />
+                <div className="container-glosarios">
+                    <div>
+                        <p className="glosario-titulo g-t-primero">Vocabulario de FMS:</p>
+                        <DisplayGlosario GlosarioContent={Content_1}  />
+                    </div>
+                    <div>
+                        <p className="glosario-titulo g-t-segundo">Vocabulario de freestyle en general:</p>
+                        <DisplayGlosario GlosarioContent={Content_2} />
+                    </div>
+                </div>
             </div>
         </>
     )

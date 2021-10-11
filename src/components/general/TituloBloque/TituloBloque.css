@@ -60,3 +60,15 @@ h2::after {
 .bloque-glosario {
     width: 183px;
 }
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+    .bloque-batalla {
+        width: 300px;
+    }
+    .bloque-podcast {
+        width: 337px;
+    }
+  }

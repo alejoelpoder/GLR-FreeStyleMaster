@@ -18,18 +18,18 @@ const DisplayParticipantes = () => {
     }
 
     const participantesPeru = [
-        {nombre: 'peruNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'perTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'perLO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruJOKKER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'perWLEY',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruJOQERR',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruRODAMIENTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruANUBIS',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruERREKA',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruRICTO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruOTRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruANOTHER',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'BLACKCODE',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f53b8cd47df0752318dea.jpg'},
+        {nombre: 'DIEGO MC',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f53c5787de22cb32985f4.jpg'},
+        {nombre: 'GHOST',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f53cd80f61b1d187fbf92.jpg'},
+        {nombre: 'JAIR WONG',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f53d880f61b1d187fbf93.jpg'},
+        {nombre: 'JAZE',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f53e14f59fc6780416146.jpg'},
+        {nombre: 'JOTA',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f54721ff7506eb13f77e2.jpg'},
+        {nombre: 'KIAN',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f547d80f61b1d187fbf95.jpg'},
+        {nombre: 'NEKROOS',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f548a80f61b1d187fbf96.jpg'},
+        {nombre: 'SKILLL',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f549480f61b1d187fbf97.jpg'},
+        {nombre: 'STICK',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f54a44aafb370e4643fc4.jpg'},
+        {nombre: 'STRIKE',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f554d24ba7c305b6e130e.jpg'},
+        {nombre: 'VIJAY',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/07/lg_615f555624ba7c305b6e130f.jpg'},
     ]
 
     const participantesEspaña = [

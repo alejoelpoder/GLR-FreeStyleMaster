@@ -24,13 +24,25 @@
     align-items: center;
     justify-content: center;
 }
-.nombreContainer .jornadaItem:nth-child(8) .jornadaItem-puesto, .nombreContainer .jornadaItem:nth-child(9) .jornadaItem-puesto, .nombreContainer .jornadaItem:nth-child(10) .jornadaItem-puesto  {
+.nombreContainer .jornadaItem:nth-child(10) .jornadaItem-puesto, .nombreContainer .jornadaItem:nth-child(11) .jornadaItem-puesto, .nombreContainer .jornadaItem:nth-child(12) .jornadaItem-puesto  {
     background: red;
     border-radius: 21px;
 }
-.nombreContainer .jornadaItem:nth-child(8) .jornadaItem-puesto {
+.nombreContainer .jornadaItem:nth-child(10) .jornadaItem-puesto {
     background: #ffc600;
 }
 .nombreContainer .jornadaItem:nth-child(10) .jornadaItem-puesto {
     letter-spacing: 0px;
 }
+
+@media (max-width: 480px) {
+    .nombreContainer td {
+        font-size: 10px;
+    }
+    .nombreContainer {
+        padding-right: 5px;
+    }
+    .jornada-data-element {
+        width: 45px;
+    }
+  }

@@ -15,22 +15,22 @@ const Header = () => {
             router: 'peru',
             text: 'PERÚ',
         },
-        {
-            router: 'chile',
-            text: 'CHILE'
-        },
-        {
-            router: 'españa',
-            text: 'ESPAÑA'
-        },
-        {
-            router: 'mexico',
-            text: 'MEXICO'
-        },
-        {
-            router: 'argentina',
-            text: 'ARGENTINA'
-        }
+        // {
+        //     router: 'chile',
+        //     text: 'CHILE'
+        // },
+        // {
+        //     router: 'españa',
+        //     text: 'ESPAÑA'
+        // },
+        // {
+        //     router: 'mexico',
+        //     text: 'MEXICO'
+        // },
+        // {
+        //     router: 'argentina',
+        //     text: 'ARGENTINA'
+        // }
     ]
 
     const imagenTitulo = (cat) => {

@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### A tener en cuenta
+API_URL: https://cronosservices.glr.pe/api/content/article/list?site_id=larepublica&status=1&order_field=updated_at&limit=3&category_slug=/freestyle
+Link del podcast: https://podcast.larepublica.pe/podcast/entre-rimas-y-gallos/
+Query que se debe poner cuando exsista data en el tag FMS: &tag_slug=/tag/fms

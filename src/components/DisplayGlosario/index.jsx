@@ -8,12 +8,11 @@ const DisplayGlosario = ({GlosarioContent}) => {
             <ul>
                 {
                     GlosarioContent.map(item => (
-                        <li className="display-glosario-li" key={item.id}>
                             <TextGlosario
+                                key={item.id}
                                 titElement={item.tit}
                                 contentElement={item.cont}
                             />
-                        </li>
                     ))
                 }
             </ul>

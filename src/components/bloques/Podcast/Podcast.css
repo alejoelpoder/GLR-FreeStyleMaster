@@ -3,3 +3,9 @@
     margin: 50px auto;
     display: block;
 }
+
+@media (max-width: 768px) {
+    .spotify-embed-iframe {
+        width: 86%;
+    }
+  }

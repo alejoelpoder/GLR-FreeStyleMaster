@@ -1,3 +1,6 @@
+.leyenda {
+    margin-left: 40px;
+}
 .leyenda h4 {
     margin: 0;
     margin-top: -20px;
@@ -7,6 +10,7 @@
 }
 .leyenda-container {
     margin-top: 22px;
+    padding-right: 20px;
 }
 .leyenda-container:nth-child(1) {
     border-right: solid 1px #ffffff65;
@@ -23,3 +27,19 @@
     display: flex;
     margin: 50px auto;
 }
+
+@media (max-width: 768px) {
+    .leyenda {
+        margin-top: 70px;
+        margin-left: 0
+    }
+  }
+
+  @media (max-width: 480px) {
+    .leyenda-container {
+        font-size: 15px !important;
+    }
+    .dataContainer .leyenda-container:nth-child(2) {
+        width: 300px;
+    }
+  }

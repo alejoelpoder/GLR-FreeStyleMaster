@@ -10,7 +10,7 @@ const MasterseriesContainer = () => {
                 altIMG={'Freestyle Masterseries Perú'}
                 fms={'FMS PERÚ'}
             />
-            <MasterseriesCard 
+            {/* <MasterseriesCard 
                 urlLink={'./FSM/españa'}
                 urlIMG={'https://i.ibb.co/5k77M2v/espa-a.png'}
                 altIMG={'Freestyle Masterseries España'}
@@ -33,7 +33,7 @@ const MasterseriesContainer = () => {
                 urlIMG={'https://i.ibb.co/5FR40NH/mexico.png'}
                 altIMG={'Freestyle Masterseries México'}
                 fms={'FMS MÉXICO'}
-            />
+            /> */}
         </div>
     )
 }

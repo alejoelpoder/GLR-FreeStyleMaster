@@ -17,8 +17,8 @@ const DisplayHostYDj = () => {
     }
 
     const hostYDjPeru = [
-        {nombre: 'peruNITRO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
-        {nombre: 'peruACERTIJO',foto: 'https://via.placeholder.com/300/09f/fff.png'},
+        {nombre: 'METZ',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164810107247222ce2b02b5.jpg'},
+        {nombre: 'DMANDADO',foto: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164810df35f4972af588b77.jpg'},
     ]
 
     const hostYDjEspaña = [
