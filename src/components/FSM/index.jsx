@@ -3,6 +3,7 @@ import { Switch, useParams } from "react-router";
 import Header from '../bloques/Header';
 import Participantes from '../bloques/Participantes';
 import TablaPosiciones from '../bloques/TablaPosiciones';
+import MVPJornadas from '../MVPxJornadas';
 
 const FSM = () => {
 
@@ -25,6 +26,7 @@ const FSM = () => {
                 {paisSelect(pais)}
                 <Participantes />
                 <TablaPosiciones />
+                <MVPJornadas />
             </body>
         </>
     )
