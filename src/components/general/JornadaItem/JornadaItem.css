@@ -1,0 +1,12 @@
+.jornadaItem {
+    display: flex;
+}
+.jornadaItem-puesto {
+    text-align: center;
+}
+.last-tree {
+    letter-spacing: 0.1px;
+}
+.aster {
+    padding-left: 7px;
+}

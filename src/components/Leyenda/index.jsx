@@ -6,7 +6,7 @@ const Leyenda = () => {
     const siglas = ['PTS', 'SCORE', 'BG', 'BP', 'BGR', 'BPR', '🟡', '🔴', '🥇', '*']
     const sintagma = [
         'Puntos ganados por batalla',
-        'Puntaje total obtenidopor batalla',
+        'Puntaje total obtenido por batalla',
         'Batalla ganada',
         'Batalla perdida',
         'Batalla ganada con réplica',
@@ -29,6 +29,7 @@ const Leyenda = () => {
                                 siglas.map(item => (
                                     <JornadaItem
                                         info={item}
+                                        aster={`${item === '*'? 'aster' : ''}`}
                                     />
                                 ))
                             }

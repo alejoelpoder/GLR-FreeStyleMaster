@@ -3,11 +3,11 @@ import JornadaItem from '../general/JornadaItem'
 
 const JornadaData = ({PTS}) => {
 
-    const SCORE = [{id: 1,SCORE: 2436.5},{id: 2,SCORE: 1867},{id: 3,SCORE: 1101.5},{id: 4,SCORE: 945},{id: 5,SCORE: 875.5},{id: 6,SCORE: 600},{id: 7,SCORE: 422.5},{id: 8,SCORE: 150},{id: 9,SCORE: 85.5},{id: 10,SCORE: 10},]
-    const BG = [{id: 1,BG: 5},{id: 2,BG: 4},{id: 3,BG: 3},{id: 4,BG: 4},{id: 5,BG: 2},{id: 6,BG: 2},{id: 7,BG: 1},{id: 8,BG: 1},{id: 9,BG: 1},{id: 10,BG: 0},]
-    const BP = [{id: 1,BP: 0},{id: 2,BP: 1},{id: 3,BP: 1},{id: 4,BP: 1},{id: 5,BP: 2},{id: 6,BP: 2},{id: 7,BP: 4},{id: 8,BP: 3},{id: 9,BP: 4},{id: 10,BP: 5},]
-    const BGR = [{id: 1,BGR: 0},{id: 2,BGR: 1},{id: 3,BGR: 1},{id: 4,BGR: 1},{id: 5,BGR: 2},{id: 6,BGR: 2},{id: 7,BGR: 4},{id: 8,BGR: 3},{id: 9,BGR: 4},{id: 10,BGR: 5},]
-    const BPR = [{id: 1,BPR: 0},{id: 2,BPR: 1},{id: 3,BPR: 1},{id: 4,BPR: 1},{id: 5,BPR: 2},{id: 6,BPR: 2},{id: 7,BPR: 4},{id: 8,BPR: 3},{id: 9,BPR: 4},{id: 10,BPR: 5},]
+    const SCORE = [{id: 1,SCORE: 343},{id: 2,SCORE: 312},{id: 3,SCORE: 274.5},{id: 4,SCORE: 313},{id: 5,SCORE: 310},{id: 6,SCORE: 275},{id: 7,SCORE: 312.5},{id: 8,SCORE: 307.5},{id: 9,SCORE: 270},{id: 10,SCORE: 292.5},{id: 11,SCORE: 284},{id: 12,SCORE: 255.5}]
+    const BG = [{id: 1,BG: 1},{id: 2,BG: 1},{id: 3,BG: 1},{id: 4,BG: 0},{id: 5,BG: 0},{id: 6,BG: 0},{id: 7,BG: 0},{id: 8,BG: 0},{id: 9,BG: 0},{id: 10,BG: 0},{id: 11,BG: 0},{id: 12,BG: 0}]
+    const BP = [{id: 1,BP: 0},{id: 2,BP: 0},{id: 3,BP: 0},{id: 4,BP: 0},{id: 5,BP: 0},{id: 6,BP: 0},{id: 7,BP: 0},{id: 8,BP: 0},{id: 9,BP: 0},{id: 10,BP: 1},{id: 11,BP: 1},{id: 12,BP: 1}]
+    const BGR = [{id: 1,BGR: 0},{id: 2,BGR: 0},{id: 3,BGR: 0},{id: 4,BGR: 1},{id: 5,BGR: 1},{id: 6,BGR: 1},{id: 7,BGR: 0},{id: 8,BGR: 0},{id: 9,BGR: 0},{id: 10,BGR: 0},{id: 11,BGR: 0},{id: 12,BGR: 0}]
+    const BPR = [{id: 1,BPR: 0},{id: 2,BPR: 0},{id: 3,BPR: 0},{id: 4,BPR: 0},{id: 5,BPR: 0},{id: 6,BPR: 0},{id: 7,BPR: 1},{id: 8,BPR: 1},{id: 9,BPR: 1},{id: 10,BPR: 0},{id: 11,BPR: 0},{id: 12,BPR: 0}]
 
     return (
         <>

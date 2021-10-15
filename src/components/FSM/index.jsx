@@ -1,32 +1,34 @@
 import './FSM.css'
-import { Switch, useParams } from "react-router";
 import Header from '../bloques/Header';
 import Participantes from '../bloques/Participantes';
 import TablaPosiciones from '../bloques/TablaPosiciones';
-import MVPJornadas from '../MVPxJornadas';
+import Evolutivo from '../bloques/Evolutivo';
+import Jurado from '../bloques/Jurado';
+import HostyDj from '../bloques/HostYDj';
+import Podcast from '../bloques/Podcast';
+import BatallaRecomendada from '../bloques/BatallaRecomendada';
+import Glosario from '../bloques/Glosario';
+import MejoresJornada from '../bloques/MejoresJornada';
+import UltimasNoticias from '../bloques/UltimasNoticias';
+import Footer from '../bloques/Footer';
 
 const FSM = () => {
-
-    const {pais} = useParams();
-
-    const paisSelect = (cat) => {
-        switch(cat) {
-            case 'peru': return <Header titulo={'Perú'} />;
-            case 'chile': return <Header titulo={'Chile'} />;
-            case 'españa': return <Header titulo={'España'} />;
-            case 'mexico': return <Header titulo={'México'} />;
-            case 'argentina': return <Header titulo={'Argentina'} />;
-            default: return <p className="hola">La categoría no existe</p>;
-        }
-    }
 
     return (
         <>
             <body>
-                {paisSelect(pais)}
+                <Header />
                 <Participantes />
                 <TablaPosiciones />
-                <MVPJornadas />
+                <Evolutivo />
+                <MejoresJornada />
+                <Jurado />
+                <HostyDj />
+                <UltimasNoticias />
+                <Podcast />
+                <BatallaRecomendada />
+                <Glosario />
+                <Footer />
             </body>
         </>
     )

@@ -1,0 +1,80 @@
+.mejores-jornada-sistema {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.mejores-jornada-sistema form {
+    position: absolute;
+    left: 50%;
+    margin-left: -460px;
+    top: -60px;
+    font-family: 'Montserrat-Medium', arial;
+}
+.mejores-jornada-sistema form select {
+    height: 35px;
+    width: 145px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #5a0404;
+}
+.button-jornada-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mejores-jornada-button {
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    border-top: 0;
+    border-left: 0;
+
+    width: 270px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: 'Montserrat-Medium', arial;
+    color: #fff;
+    cursor: pointer;
+}
+.item-cat-open {
+    background-color: #855f16;
+}
+.item-cat-close {
+    background-color: #000;
+}
+
+.mejores-jornada-img {
+    height: 300px;
+    width: 300px;
+    background-color: #ff4;
+}
+.mejores-jornada-img img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .mejores-jornada-sistema {
+        flex-direction: column;
+        width: 100%;
+    }
+    .button-jornada-container {
+        margin: 0 auto;
+        height: 300px;
+    }
+    .mejores-jornada-img {
+        margin: 50px auto;
+    }
+    .mejores-jornada-sistema form {
+        margin-left: -100px;
+    }
+    .mejores-jornada-sistema form select {
+        width: 200px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+  }

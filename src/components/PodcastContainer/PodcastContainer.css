@@ -6,9 +6,14 @@
     align-items: center;
     margin-top: 40px;
 }
-
+.Podcast a {
+    width: 100%;
+    margin-top: 40px;
+    text-decoration: none;
+}
 .podcast-logo {
     width: 65px;
+    margin: 0 auto;
 }
 .podcast-logo img {
     width: 100%;

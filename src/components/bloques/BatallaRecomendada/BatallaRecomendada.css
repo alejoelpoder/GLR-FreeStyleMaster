@@ -1,0 +1,26 @@
+.container-video-batalla {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.youtube-embed-iframe {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container-video-batalla {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .youtube-embed-iframe {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .youtube-embed-iframe {
+        width: 90%;
+        height: 220px;
+    }
+}

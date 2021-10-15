@@ -1,0 +1,49 @@
+.glosario-tit {
+    color: #fff;
+    font-family: 'Montserrat-Medium', arial;
+}
+.glosario-container {
+    width: 80%;
+    margin: 10px auto;
+}
+.glosario-text {
+    margin: 0;
+    font-size: 17px !important;
+    display: inline;
+    padding: 0;
+}
+
+.glosario-tit-peru {
+    background-color: #5a0404;
+}
+.glosario-tit-mexico {
+    background-color: #23c541;
+}
+.glosario-tit-españa {
+    background-color: #900909;
+}
+.glosario-tit-argentina {
+    background-color: #2475a8;
+}
+.glosario-tit-chile {
+    background-color: #040f40;
+}
+
+@media (max-width: 768px) {
+    .glosario-text {
+        width: 390px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .glosario-text {
+        width: 390px;
+        font-size: 10px !important;
+    }
+    .glosario-container {
+        margin: 25px auto;
+    }
+    .glosario-container p {
+        line-height: 1.5;
+    }
+  }

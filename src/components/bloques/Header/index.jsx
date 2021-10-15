@@ -1,12 +1,12 @@
 import './Header.css'
-import { Switch, useParams } from "react-router";
+import { useParams } from "react-router";
 import titulo_peru from './media/titulo_peru.png';
 import titulo_chile from './media/titulo_chile.png';
 import titulo_españa from './media/titulo_españa.png';
 import titulo_mexico from './media/titulo_mexico.png';
 import titulo_argentina from './media/titulo_argentina.png';
 
-const Header = ({titulo}) => {
+const Header = () => {
 
     const {pais} = useParams();
 
@@ -15,22 +15,22 @@ const Header = ({titulo}) => {
             router: 'peru',
             text: 'PERÚ',
         },
-        {
-            router: 'chile',
-            text: 'CHILE'
-        },
-        {
-            router: 'españa',
-            text: 'ESPAÑA'
-        },
-        {
-            router: 'mexico',
-            text: 'MEXICO'
-        },
-        {
-            router: 'argentina',
-            text: 'ARGENTINA'
-        }
+        // {
+        //     router: 'chile',
+        //     text: 'CHILE'
+        // },
+        // {
+        //     router: 'españa',
+        //     text: 'ESPAÑA'
+        // },
+        // {
+        //     router: 'mexico',
+        //     text: 'MEXICO'
+        // },
+        // {
+        //     router: 'argentina',
+        //     text: 'ARGENTINA'
+        // }
     ]
 
     const imagenTitulo = (cat) => {
@@ -39,7 +39,7 @@ const Header = ({titulo}) => {
             case 'chile': return <img src={titulo_chile} alt="título" />;
             case 'españa': return <img src={titulo_españa} alt="título" />;
             case 'mexico': return <img src={titulo_mexico} alt="título" />;
-            case 'argentina': return <img src={titulo_argentina} alt="título" />;
+            case 'argentina': return <img className={pais == 'argentina' ? 'arg' : 'img'} src={titulo_argentina} alt="título" />;
             default: return <p className="hola">La categoría no existe</p>;
         }
     }
@@ -53,7 +53,7 @@ const Header = ({titulo}) => {
                             navHeaderList &&
                             navHeaderList.filter(item => item.router !== pais).map((item, i) => 
                                 <li key={i}>
-                                    <a href={item.router} rel="noreferrer">{item.text}</a>
+                                    <a href={item.router} rel="noreferrer">{`FMS ${item.text}`}</a>
                                 </li>
                             )
                         }
@@ -62,7 +62,8 @@ const Header = ({titulo}) => {
                 {
                     imagenTitulo(pais)
                 }
-                <p>ACTUALIZADO AL 19-AGOSTO-2021 - 03:17 P. M.</p>
+                <p className='bajada'>Repasa toda la información jornada tras jornada de la Freestyle Master Series.</p>
+                <p className={`ultima-fecha-${pais}`}>ACTUALIZADO AL 19-AGOSTO-2021 - 03:17 P. M.</p>
             </header>
         </>
     )
