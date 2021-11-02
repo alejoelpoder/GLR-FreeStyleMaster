@@ -1,10 +1,12 @@
 import './JornadaNombre.css'
-import { Switch, useParams } from "react-router";
+import { useParams } from "react-router";
 import JornadaItem from '../general/JornadaItem'
 
 const JornadaNombre = ({participantes}) => {
 
     const {pais} = useParams();
+    console.log(participantes)
+    // const nombresJornada = participantes.participantes
 
     return (
         <>
@@ -13,12 +15,13 @@ const JornadaNombre = ({participantes}) => {
                     participantes?
                     <>
                         {
-                            participantes.filter(item => item.router == pais).map((item, i) => (
+                            // participantes.filter(item => item.router == pais).map((item, i) => (
+                                participantes?.participantes?.map((item, i) => (
                                 <JornadaItem
                                     key={i}
-                                    info={item.nombre}
-                                    puesto={`${item.id}${item.id >= 10? '' : '.'} `}
-                                    last={`${item.id >= 10? 'last-tree' : '.'}`}
+                                    info={item}
+                                    puesto={`${i + 1}${i + 1 >= 10? '' : '.'} `}
+                                    last={`${i + 1 >= 10? 'last-tree' : '.'}`}
                                 />
                             ))
                         }

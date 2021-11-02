@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const DisplayUltimasNoticias = () => {
-
     const [people, setPeople] = useState([]);
 
     const getPeople = async () => {
@@ -12,7 +11,7 @@ const DisplayUltimasNoticias = () => {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/menu',
-                'token_id': 'eac355Be7AEhhj222E18JChIE7j972573BAj2B1Eg4'
+                'token_id': process.env.REACT_APP_TOKEN_ID
             }
         }
     

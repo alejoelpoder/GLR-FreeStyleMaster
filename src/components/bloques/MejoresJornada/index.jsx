@@ -9,7 +9,7 @@ const MejoresJornada = () => {
 
     const [state, setState] = useState(1)
 
-    const categorias1 = [{id: 1,tema: 'EASY MODE'},{id: 2,tema: 'TEMÁTICA'},{id: 3,tema: 'SANGRE'},{id: 4,tema: 'DELUX'}]
+    const categorias1 = [{id: 1,tema: 'EASY MODE'},{id: 2,tema: 'TEMÁTICA'},{id: 3,tema: 'SANGRE'},{id: 4,tema: 'DELUXE'}]
     const categorias2 = [{id: 5,tema: 'HARD MODE'},{id: 6,tema: 'RANDOM MODE'},{id: 7,tema: 'A CAPELLA'},{id: 8,tema: 'MVP'},]
 
     const ganadoresJornada1 = [
