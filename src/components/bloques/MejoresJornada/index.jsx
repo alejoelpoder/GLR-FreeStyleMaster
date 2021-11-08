@@ -1,126 +1,92 @@
 import './MejoresJornada.css'
 import TituloBloque from '../../general/TituloBloque';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from "react-router";
+import { getFirestore } from "../../../firebase";
+import 'firebase/compat/firestore'
+
+import blackcode from './MEJORESJORNADA/BLACKCODE.png'
+import diegomc from './MEJORESJORNADA/DIEGOMC.png'
+import ghost from './MEJORESJORNADA/GHOST.png'
+import jairwong from './MEJORESJORNADA/JAIRWONG.png'
+import jaze from './MEJORESJORNADA/JAZE.png'
+import jota from './MEJORESJORNADA/JOTA.png'
+import kian from './MEJORESJORNADA/KIAN.png'
+import nekroos from './MEJORESJORNADA/NEKROOS.png'
+import skill from './MEJORESJORNADA/SKILL.png'
+import stick from './MEJORESJORNADA/STICK.png'
+import strike from './MEJORESJORNADA/STRIKE.png'
+import vijay from './MEJORESJORNADA/VIJAY.png'
+
 
 const MejoresJornada = () => {
 
     const {pais} = useParams();
 
     const [state, setState] = useState(1)
+    const [data, setData] = useState({})
+    const [ptsCat, setPtsCat] = useState({})
+    const [select, setSelect] = useState('easy-mode')
+    console.log('mejoresJornada')
+    console.log(data)
 
-    const categorias1 = [{id: 1,tema: 'EASY MODE'},{id: 2,tema: 'TEMÁTICA'},{id: 3,tema: 'SANGRE'},{id: 4,tema: 'DELUXE'}]
-    const categorias2 = [{id: 5,tema: 'HARD MODE'},{id: 6,tema: 'RANDOM MODE'},{id: 7,tema: 'A CAPELLA'},{id: 8,tema: 'MVP'},]
+    const categorias1 = [{id: 1,tema: 'EASY MODE', key: 'easy-mode'},{id: 2,tema: 'TEMÁTICA', key: 'tematica'},{id: 3,tema: 'SANGRE', key: 'sangre'},{id: 4,tema: 'DELUXE', key: 'deluxe'}]
+    const categorias2 = [{id: 5,tema: 'HARD MODE', key: 'hard-mode'},{id: 6,tema: 'RANDOM MODE', key: 'random-mode'},{id: 7,tema: 'A CAPELLA', key: 'a-capella'},{id: 8,tema: 'MVP', key: 'mvp'},]
 
-    const ganadoresJornada1 = [
-        {
-            id: 1,
-            tema: 'EASY MODE',
-            ganador: 'STICK',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/15/lg_6169f824edccb540413eefbb.jpg',
-            router: 'peru'
-        },
-        {
-            id: 2,
-            tema: 'TEMÁTICA',
-            ganador: 'NEKROOS',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/15/lg_6169f8578299c02c403a60ca.jpg',
-            router: 'peru'
-        },
-        {
-            id: 3,
-            tema: 'SANGRE',
-            ganador: 'JAZE',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c975a44d24554268af0b.jpg',
-            router: 'peru'
-        },
-        {
-            id: 4,
-            tema: 'DELUX',
-            ganador: 'BLACKCODE',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/15/lg_6169f8a88bbd2a2a6971ffa8.jpg',
-            router: 'peru'
-        },
-        {
-            id: 5,
-            tema: 'HARD MODE',
-            ganador: 'SKILL',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/15/lg_6169f8db6be25f535f783655.jpg',
-            router: 'peru'
-        },
-        {
-            id: 6,
-            tema: 'RANDOM MODE',
-            ganador: 'JAZE',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c975a44d24554268af0b.jpg',
-            router: 'peru'
-        },
-        {
-            id: 7,
-            tema: 'A CAPELLA',
-            ganador: 'STICK',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/15/lg_6169f824edccb540413eefbb.jpg',
-            router: 'peru'
-        },
-        {
-            id: 8,
-            tema: 'MVP',
-            ganador: 'JAZE',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c975a44d24554268af0b.jpg',
-            router: 'peru'
-        },
-        {
-            id: 1,
-            tema: 'SANGRE',
-            ganador: 'JOTA',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c9672d519b204b51baa3.jpg',
-            router: 'chile'
-        },
-        {
-            id: 4,
-            tema: 'DELUX',
-            ganador: 'JAZE',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c975a44d24554268af0b.jpg',
-            router: 'chile'
-        },
-    ]
-    const ganadoresJornada2 = [
-        {
-            id: 1,
-            tema: 'EASY MODE',
-            ganador: 'JOTA',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c9672d519b204b51baa3.jpg',
-            router: 'peru'
-        },
-        {
-            id: 2,
-            tema: 'TEMÁTICA',
-            ganador: 'JAZE',
-            img: 'https://origin.cronosmedia.glr.pe/large/2021/10/11/lg_6164c975a44d24554268af0b.jpg',
-            router: 'peru'
-        },
-    ]
-    const [participantes, setParticipantes] = useState(ganadoresJornada1)
-    
-    const Jornadas_participantes = (cat) => {
+    const mc = (cat) => {
         switch(cat) {
-            case 'j1': return ganadoresJornada1;
-            // case 'j2': return ganadoresJornada2;
-            default: return ganadoresJornada1;
+            case 'blackcode': return blackcode;
+            case 'diegomc': return diegomc;
+            case 'ghost': return ghost;
+            case 'jairwong': return jairwong;
+            case 'jaze': return jaze;
+            case 'jota': return jota;
+            case 'kian': return kian;
+            case 'nekroos': return nekroos;
+            case 'skill': return skill;
+            case 'stick': return stick;
+            case 'strike': return strike;
+            case 'vijay': return vijay;
+            default: return ptsCat[select];
         }
     }
 
-    const shoot = (a) => {
+    const num = (cat) => {
+        switch(cat) {
+            case '1': return data[0];
+            case '2': return data[1];
+            case '3': return data[2];
+            default: return data[0];
+        }
+    }
+
+    const cambiarJornadaCat = () => {
+        let selectCatJor = document.getElementById('jornada-select-categoria');
+        let JornadaSelectCat = selectCatJor.options[selectCatJor.selectedIndex].value
+        setPtsCat(num(JornadaSelectCat))
+        
+    }
+
+    const shoot = (a, b) => {
         setState(a)
+        setSelect(b)
     }
 
-    const cambiarJornada = () => {
-        let select = document.getElementById('jornada-select-categoria');
-        let JornadaSelect = select.options[select.selectedIndex].value
-        console.log(JornadaSelect)
-        setParticipantes(Jornadas_participantes(JornadaSelect))
-    }
+    useEffect(() => {
+        const dbQuery = getFirestore()
+        const traer = dbQuery.collection(pais.toUpperCase())
 
+        traer.get().then(({docs}) => {
+            setData(docs.map(doc => ({id: doc.id, ...doc.data()})))
+        })
+        
+    }, [])
+
+    useEffect(() => {
+        if (data) {
+            setPtsCat(num)
+        }
+    }, [data])
 
     return (
         <>
@@ -128,31 +94,33 @@ const MejoresJornada = () => {
                 <TituloBloque titulo={'MEJORES POR CATEGORIA'} classBloque={'batalla'} />
                 <div className="mejores-jornada-sistema">
                     <form action="">
-                        <select id="jornada-select-categoria" className={``} onChange={cambiarJornada}>
-                        <option value="j1">JORNADA 1</option>
+                        <select id="jornada-select-categoria" name='mejorCat' className={``} onChange={cambiarJornadaCat}>
+                        <option value="1">JORNADA 1</option>
+                        <option value="2">JORNADA 2</option>
                         {/* <option value="j2">JORNADA 2</option> */}
                         </select>
                     </form>
                     <div className="button-jornada-container">
                         {
                             categorias1.map((item) => 
-                                <button className={`mejores-jornada-button ${item.id === state? 'item-cat-open' : 'item-cat-close'}`} onClick={() => shoot(item.id, item.tema)} key={item.id}>{item.tema}</button>
+                                <button className={`mejores-jornada-button ${item.id === state? 'item-cat-open' : 'item-cat-close'}`} onClick={() => shoot(item.id, item.key)} key={item.id}>{item.tema}</button>
                             )
                         }
                     </div>
                     
                     <div className="mejores-jornada-img">
                         {
-                            participantes.filter(item => item.id == state).filter(item => item.router == pais).map(item => 
-                                <img src={item.img} alt="ganador" />
-                            )
+                            ptsCat?
+                                <img src={mc(ptsCat[select])} alt="ganador" />
+                            :
+                            <p>cargando</p>
                         }
                     </div>
 
                     <div className="button-jornada-container">
                         {
                             categorias2.map((item) => 
-                                <button className={`mejores-jornada-button ${item.id === state? 'item-cat-open' : 'item-cat-close'}`} onClick={() => shoot(item.id, item.tema)} key={item.id}>{item.tema}</button>
+                                <button className={`mejores-jornada-button ${item.id === state? 'item-cat-open' : 'item-cat-close'}`} onClick={() => shoot(item.id, item.key)} key={item.id}>{item.tema}</button>
                             )
                         }
                     </div>

@@ -21,6 +21,7 @@
     border: none;
     color: #fff;
     background-color: #5a0404;
+    cursor: pointer;
 }
 .button-jornada-container {
     display: flex;

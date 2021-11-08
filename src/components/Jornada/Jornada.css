@@ -17,6 +17,10 @@
     border-radius: 20px;
     border: none;
     color: #fff;
+    cursor: pointer;
+}
+.jornada-container form select option {
+    cursor: pointer;
 }
 
 .jornada-select-peru {background-color: #5a0404;}

@@ -1,12 +1,10 @@
 import './Jornada.css'
 import { useState, useEffect } from 'react';
+import { useParams } from "react-router";
 import JornadaNombre from './JornadaNombre';
 import JornadaData from './JornadaData';
 import Leyenda from '../Leyenda';
-import { useParams } from "react-router";
-
 import { getFirestore } from "../../firebase";
-import firebase from "@firebase/app-compat";
 import 'firebase/compat/firestore'
 
 const Jornada = () => {
@@ -19,6 +17,7 @@ const Jornada = () => {
         switch(cat) {
             case '1': return data[0];
             case '2': return data[1];
+            case '3': return data[2];
             default: return data[0];
         }
     }
@@ -32,7 +31,7 @@ const Jornada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection('PERU')
+        const traer = dbQuery.collection(pais.toUpperCase())
 
         traer.get().then(({docs}) => {
             setData(docs.map(doc => ({id: doc.id, ...doc.data()})))
@@ -52,13 +51,14 @@ const Jornada = () => {
                     <select id="jornada-select" className={`jornada-select-${pais}`} onChange={cambiarJornada}>
                     <option value="1">JORNADA 1</option>
                     <option value="2">JORNADA 2</option>
+                    <option value="3">JORNADA 3</option>
                     </select>
                 </form>
                 <div className={'fullContainer'}>
                     <div className={'elementosJornadaContainer'}>
                             <>
                                 <JornadaNombre participantes={pts} />
-                                <JornadaData numeros={data[0]} />
+                                <JornadaData numeros={pts} />
                             </>
                     </div>
                     <Leyenda />
