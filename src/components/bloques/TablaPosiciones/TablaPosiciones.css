@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;900&family=Montserrat:wght@400;500;600;700&display=swap');
 .container-posiciones td {
-    font-family: 'Montserrat-Medium', arial;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }

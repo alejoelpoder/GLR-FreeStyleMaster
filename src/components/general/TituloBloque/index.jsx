@@ -1,13 +1,13 @@
 import './TituloBloque.css'
-import { Switch, useParams } from "react-router";
+// import { Switch, useParams } from "react-router";
 
 const TituloBloque = ({titulo, classBloque}) => {
 
-    const {pais} = useParams();
+    // const {pais} = useParams();
     
     return (
         <>
-            <h2 className={`titulo-${pais} bloque-${classBloque}`}>{titulo}</h2>
+            <h2 className={`titulo-peru bloque-${classBloque}`}>{titulo}</h2>
         </>
     )
 }

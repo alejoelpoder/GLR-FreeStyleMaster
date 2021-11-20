@@ -5,7 +5,7 @@ const MasterseriesContainer = () => {
     return (
         <div className="MasterseriesContainer">
             <MasterseriesCard 
-                urlLink={'./FSM/peru'}
+                urlLink={'https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-peru/'}
                 urlIMG={'https://i.ibb.co/n1N31f0/peru-jpg.png'}
                 altIMG={'Freestyle Masterseries Perú'}
                 fms={'FMS PERÚ'}

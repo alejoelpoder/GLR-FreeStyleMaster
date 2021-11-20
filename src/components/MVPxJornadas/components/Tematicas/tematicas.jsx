@@ -18,14 +18,12 @@ const Tematica = () => {
   const CambiarJornada = (e) => {
     let select = e.target.value
     setIdArticulos(select)
-    console.log('select', select)
   }
 
   
   const showImage = (index) => {
     try{
       const obj = DataAutorsGeneral[idArticulos - 1].autors
-      console.log('obj', obj[index].photo)
       setInfo(obj[index])
     }
     catch(e){

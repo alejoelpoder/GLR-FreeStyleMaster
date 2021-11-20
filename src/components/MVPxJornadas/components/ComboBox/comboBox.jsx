@@ -18,7 +18,7 @@ const ComboBox = ({
         value={value}
         id={id}
       >
-        {/* {console.log('options',options)} */}
+
         {
           [{id: 0, description: placeholder}, ...options].map((item, i) => 
           <>

@@ -1,11 +1,11 @@
 import './JornadaNombre.css'
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import JornadaItem from '../general/JornadaItem'
 
 const JornadaNombre = ({participantes}) => {
 
-    const {pais} = useParams();
-    console.log(participantes)
+    // const {pais} = useParams();
+
     // const nombresJornada = participantes.participantes
 
     return (

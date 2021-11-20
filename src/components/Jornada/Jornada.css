@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;900&family=Montserrat:wght@400;500;600;700&display=swap');
+
 .jornada-container {
     display: flex;
     background-color: #0000008f;
@@ -8,7 +10,6 @@
     left: 50%;
     margin-left: -525px;
     top: 20px;
-    font-family: 'Montserrat-Medium', arial;
 }
 .jornada-container form select {
     height: 35px;
@@ -23,7 +24,11 @@
     cursor: pointer;
 }
 
-.jornada-select-peru {background-color: #5a0404;}
+.jornada-select-peru {
+    background-color: #5a0404;
+    font-family: "Montserrat",sans-serif !important;
+    font-weight: 700 !important;
+}
 .jornada-select-españa {background-color: #900909;}
 .jornada-select-mexico {background-color: #23c541;}
 .jornada-select-argentina {background-color: #46a1da;}

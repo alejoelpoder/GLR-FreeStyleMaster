@@ -4,12 +4,12 @@
 .container-participantes ul {
     height: 550px;
     padding: 0;
-    width: 1344px;
+    width: 1273px;
     margin: 0 auto;
 }
 .container-participantes .participante-box {
     width: 188px;
-    margin: 18px;
+    margin: 12px;
     float: left;
 }
 

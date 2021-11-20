@@ -8,7 +8,7 @@ import titulo_argentina from './media/titulo_argentina.png';
 
 const Header = () => {
 
-    const {pais} = useParams();
+    // const {pais} = useParams();
 
     const navHeaderList = [
         {
@@ -33,21 +33,21 @@ const Header = () => {
         // }
     ]
 
-    const imagenTitulo = (cat) => {
-        switch(cat) {
-            case 'peru': return <img src={titulo_peru} alt="título" />;
-            case 'chile': return <img src={titulo_chile} alt="título" />;
-            case 'españa': return <img src={titulo_españa} alt="título" />;
-            case 'mexico': return <img src={titulo_mexico} alt="título" />;
-            case 'argentina': return <img className={pais == 'argentina' ? 'arg' : 'img'} src={titulo_argentina} alt="título" />;
-            default: return <p className="hola">La categoría no existe</p>;
-        }
-    }
+    // const imagenTitulo = (cat) => {
+    //     switch(cat) {
+    //         case 'peru': return <img src={titulo_peru} alt="título" />;
+    //         case 'chile': return <img src={titulo_chile} alt="título" />;
+    //         case 'españa': return <img src={titulo_españa} alt="título" />;
+    //         case 'mexico': return <img src={titulo_mexico} alt="título" />;
+    //         case 'argentina': return <img className={pais == 'argentina' ? 'arg' : 'img'} src={titulo_argentina} alt="título" />;
+    //         default: return <p className="hola">La categoría no existe</p>;
+    //     }
+    // }
     
     return (
         <>
             <header>
-                <nav>
+                {/* <nav>
                     <ul>
                         {
                             navHeaderList &&
@@ -58,12 +58,13 @@ const Header = () => {
                             )
                         }
                     </ul>
-                </nav>
-                {
+                </nav> */}
+                {/* {
                     imagenTitulo(pais)
-                }
+                } */}
+                <img src={`.${titulo_peru}`} alt="título" />
                 <p className='bajada'>Repasa toda la información jornada tras jornada de la Freestyle Master Series.</p>
-                <p className={`ultima-fecha-${pais}`}>ACTUALIZADO AL 19-AGOSTO-2021 - 03:17 P. M.</p>
+                {/* <p className={`ultima-fecha-${pais}`}>ACTUALIZADO AL 19-AGOSTO-2021 - 03:17 P. M.</p> */}
             </header>
         </>
     )

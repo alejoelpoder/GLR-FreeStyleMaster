@@ -6,7 +6,7 @@ const Item = ({nombre, foto, onclick}) => {
     // }
     return (
         <div onClick={onclick} className={'participante-box'}>
-            <img className={'participantes-foto'} src={foto} alt="foto" />
+            <img className={'participantes-foto'} src={`.${foto}`} alt="foto" />
             <h3>{nombre}</h3>
         </div>
     )

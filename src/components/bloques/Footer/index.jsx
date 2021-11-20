@@ -9,12 +9,10 @@ const Footer = () => {
                 <div class="credito">
                     <h3 className='footer-tit'>Créditos</h3>
                 </div>
-                <div class="credito">
+                <div className="credito">
                     <h3>Desarrollo web: </h3>
                     <p>
                         <a className='primero-f' target="_blanck" href="https://twitter.com/Ciensapiens">Alejandro Mayurí</a> 
-                        y 
-                        <a className='segundo-f' target="_blanck" href="https://twitter.com/Ciensapiens">Renzo Neira</a>
                     </p>
                 </div>
                 <div class="credito">
@@ -27,7 +25,7 @@ const Footer = () => {
                         <a className='segundo-f' target="_blanck" href="https://www.instagram.com/jazminceras/?utm_medium=copy_link">Jazmín Ceras</a> 
                     </p>
                 </div>
-                <div class="credito">
+                <div className="credito">
                     <h3>Información: </h3>
                     <p>
                         <a target="_blanck" href="https://larepublica.pe/autor/freestyle-lr/">Freestyle LR</a> 

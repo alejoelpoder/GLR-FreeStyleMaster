@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a5a13487.chunk.css",
+    "main.js": "/static/js/main.f2eccd2a.chunk.js",
+    "main.js.map": "/static/js/main.f2eccd2a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7fd68050.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7fd68050.js.map",
+    "static/js/2.010291a5.chunk.js": "/static/js/2.010291a5.chunk.js",
+    "static/js/2.010291a5.chunk.js.map": "/static/js/2.010291a5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a5a13487.chunk.css.map": "/static/css/main.a5a13487.chunk.css.map",
+    "static/js/2.010291a5.chunk.js.LICENSE.txt": "/static/js/2.010291a5.chunk.js.LICENSE.txt",
+    "static/media/MasterseriesCard.css": "/static/media/Montserrat-Medium.fc95a2b7.otf",
+    "static/media/Title.css": "/static/media/Resolve-ExtraboldWd.0a216d18.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fd68050.js",
+    "static/js/2.010291a5.chunk.js",
+    "static/css/main.a5a13487.chunk.css",
+    "static/js/main.f2eccd2a.chunk.js"
+  ]
+}
