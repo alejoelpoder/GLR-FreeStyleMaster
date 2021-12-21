@@ -43,26 +43,24 @@ const Header = () => {
     //         default: return <p className="hola">La categoría no existe</p>;
     //     }
     // }
-    
+
     return (
         <>
             <header>
-                {/* <nav>
+                <nav>
                     <ul>
-                        {
-                            navHeaderList &&
-                            navHeaderList.filter(item => item.router !== pais).map((item, i) => 
-                                <li key={i}>
-                                    <a href={item.router} rel="noreferrer">{`FMS ${item.text}`}</a>
-                                </li>
-                            )
-                        }
+                        <li>
+                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle/' rel="noreferrer">HOME</a>
+                        </li>
+                        <li>
+                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-peru/' rel="noreferrer">FMS PERU</a>
+                        </li>
                     </ul>
-                </nav> */}
+                </nav>
                 {/* {
                     imagenTitulo(pais)
                 } */}
-                <img src={`.${titulo_peru}`} alt="título" />
+                <img src={`.${titulo_argentina}`} alt="título" />
                 <p className='bajada'>Repasa toda la información jornada tras jornada de la Freestyle Master Series.</p>
                 {/* <p className={`ultima-fecha-${pais}`}>ACTUALIZADO AL 19-AGOSTO-2021 - 03:17 P. M.</p> */}
             </header>

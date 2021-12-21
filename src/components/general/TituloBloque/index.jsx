@@ -7,7 +7,7 @@ const TituloBloque = ({titulo, classBloque}) => {
     
     return (
         <>
-            <h2 className={`titulo-peru bloque-${classBloque}`}>{titulo}</h2>
+            <h2 className={`titulo-argentina bloque-${classBloque}`}>{titulo}</h2>
         </>
     )
 }

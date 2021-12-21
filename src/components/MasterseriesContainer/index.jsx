@@ -10,18 +10,19 @@ const MasterseriesContainer = () => {
                 altIMG={'Freestyle Masterseries Perú'}
                 fms={'FMS PERÚ'}
             />
-            {/* <MasterseriesCard 
+           {/* <MasterseriesCard 
                 urlLink={'./FSM/españa'}
                 urlIMG={'https://i.ibb.co/5k77M2v/espa-a.png'}
                 altIMG={'Freestyle Masterseries España'}
                 fms={'FMS ESPAÑA'}
-            />
+            /> */}
             <MasterseriesCard
-                urlLink={'./FSM/argentina'}
+                urlLink={'https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-argentina/'}
                 urlIMG={'https://i.ibb.co/p0sgZX2/argent-jpg.png'}
                 altIMG={'Freestyle Masterseries Argentina'}
                 fms={'FMS ARGENTINA'}
             />
+             {/* 
             <MasterseriesCard 
                 urlLink={'./FSM/chile'}
                 urlIMG={'https://i.ibb.co/vs9B3Vt/chile-jpg.png'}

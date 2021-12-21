@@ -22,7 +22,7 @@
     border-radius: 20px;
     border: none;
     color: #fff;
-    background-color: #5a0404;
+    background-color: #46a1da;
     cursor: pointer;
     font-family: "Montserrat",sans-serif !important;
     font-weight: 700 !important;
@@ -34,8 +34,8 @@
 }
 
 .mejores-jornada-button {
-    border-right: 2px solid red;
-    border-bottom: 2px solid red;
+    border-right: 2px solid #46a1da;
+    border-bottom: 2px solid #46a1da;
     border-top: 0;
     border-left: 0;
     width: 270px;
@@ -47,7 +47,7 @@
     font-weight: 700 !important;
 }
 .item-cat-open {
-    background-color: #855f16;
+    background-color: #336699;
 }
 .item-cat-close {
     background-color: #000;

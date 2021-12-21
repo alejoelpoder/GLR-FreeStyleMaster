@@ -40,6 +40,11 @@ li {
     width: 400px;
     left: 50%;
     margin-left: -50px;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 25px;
 }
 .modal-container div span {
     font-family: 'Montserrat-Medium', arial;

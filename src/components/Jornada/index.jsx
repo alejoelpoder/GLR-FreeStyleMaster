@@ -40,7 +40,8 @@ const Jornada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection('PERU')
+        const traer = dbQuery.collection("ARGENTINA")
+        
 
         traer.get().then(({docs}) => {
             setData(docs.map(doc => ({id: doc.id, ...doc.data()})))
@@ -53,19 +54,20 @@ const Jornada = () => {
         setPts(num)
     }, [data])
 
+    console.log(data)
 
     return (
         <>
             <div className="jornada-container">
                 <form action="">
-                    <select id="jornada-select" className={`jornada-select-peru`} onChange={cambiarJornada}>
+                    <select id="jornada-select" className={`jornada-select-argentina`} onChange={cambiarJornada}>
 
                             {
                                 data.length?
                                 <>
                                     {
                                         data?.filter(item => item.estado !== false).map((item, i) => (
-                                            <option value={i+1}>JORNADA {i+1}</option>
+                                            <option selected value={i+1}>JORNADA {i+1}</option>
                                         ))
                                     }
                                 </>:

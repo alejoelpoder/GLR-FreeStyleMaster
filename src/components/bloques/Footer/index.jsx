@@ -18,8 +18,7 @@ const Footer = () => {
                 <div class="credito">
                     <h3>Diseño: </h3>
                     <p>
-                        <a target="_blanck" href="https://twitter.com/Jordanhuerta23?s=09">Jordan Huerta</a> 
-                        , 
+                        <a target="_blanck" href="https://twitter.com/Jordanhuerta23?s=09">Jordan Huerta,</a>
                         <a className='segundo-f' target="_blanck" href="https://instagram.com/fabrizio.con?utm_medium=copy_link">Fabrizio Oviedo</a> 
                         y 
                         <a className='segundo-f' target="_blanck" href="https://www.instagram.com/jazminceras/?utm_medium=copy_link">Jazmín Ceras</a> 

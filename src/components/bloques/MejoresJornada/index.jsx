@@ -17,6 +17,7 @@ import skill from './MEJORESJORNADA/SKILL.png'
 import stick from './MEJORESJORNADA/STICK.png'
 import strike from './MEJORESJORNADA/STRIKE.png'
 import vijay from './MEJORESJORNADA/VIJAY.png'
+import def from './MEJORESJORNADA/def.png'
 
 
 const MejoresJornada = () => {
@@ -45,6 +46,7 @@ const MejoresJornada = () => {
             case 'stick': return stick;
             case 'strike': return strike;
             case 'vijay': return vijay;
+            case 'def' : return def;
             default: return ptsCat[select];
         }
     }
@@ -81,7 +83,7 @@ const MejoresJornada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection('PERU')
+        const traer = dbQuery.collection('ARGENTINA')
 
         traer.get().then(({docs}) => {
             setData(docs.map(doc => ({id: doc.id, ...doc.data()})))
@@ -107,7 +109,7 @@ const MejoresJornada = () => {
                                 <>
                                     {
                                         data?.filter(item => item.estado !== false).map((item, i) => (
-                                            <option value={i+1}>JORNADA {i+1}</option>
+                                            <option selected value={i+1}>JORNADA {i+1}</option>
                                         ))
                                     }
                                 </>:

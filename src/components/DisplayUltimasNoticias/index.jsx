@@ -18,10 +18,13 @@ const DisplayUltimasNoticias = () => {
         const posts = await axios.get(`https://cronosservices.glr.pe/api/content/article/list?site_id=larepublica&status=1&order_field=updated_at&limit=3&category_slug=/freestyle`, object_fetch_p);
         const dataNoticias = posts.data?.data?.articles?.data
         setPeople(dataNoticias)
+        console.log(posts)
     }
     useEffect(() => {
         getPeople();
     }, [])
+
+    console.log(people)
 
     return (
         <div className='noticias-container'>
