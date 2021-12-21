@@ -1,0 +1,109 @@
+header ul {
+    display: flex;
+    width: 720px;
+    margin: 0 auto;
+    border: solid 2px #fff;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    padding: 0;
+}
+header ul li {
+    list-style: none;
+    margin: 5px;
+    text-align: center;
+    border-right: solid 2px #fff;
+    width: 100%;
+    font-weight: bold;
+}
+header ul li:last-of-type {
+    border-right: none;
+}
+header ul li:nth-child(4) {
+    border-right: none;
+}
+header ul li a {
+    font-family: 'Resolve-ExtraboldWd', arial;
+    text-decoration: none;
+    color: #fff;
+}
+
+header img {
+    width: 830px;
+    margin: 60px auto 0;
+    display: block;
+}
+header .arg {
+    margin-top: 80px;
+}
+
+header p {
+    margin: 45px auto 0;
+    width: 500px;
+    font-size: 20px !important;
+    font-style: italic;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.ultima-fecha-argentina {
+    background-color: #2475a8;
+}
+.ultima-fecha-españa {
+    background-color: #900909;
+}
+.ultima-fecha-chile {
+    background-color: #040f40;
+}
+.ultima-fecha-peru {
+    background-color: #5a0404;
+}
+.ultima-fecha-mexico {
+    background-color: #23c541;
+}
+
+
+@media (max-width: 768px) {
+    header img {
+        width: 700px;
+        margin: 20px auto 0;
+    }
+    header p {
+        margin: 16px auto 0;
+        width: 380px;
+        font-size: 14px !important;
+    }
+    header .arg {
+        margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header ul {
+        width: 95%;
+        font-size: 12px;
+        border-radius: 0;
+    }
+    header ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header img {
+        width: 350px;
+        margin: 20px auto 0;
+    }
+    header p {
+        margin: 13px auto 0;
+        width: 290px;
+        font-size: 11px !important;
+    }
+  }
+.bajada {
+    width: 100%;
+    background-color: #000000ba;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    font-style: inherit;
+    font-weight: 500;
+}
