@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderContainer from './components/HeaderContainer';
+// import HeaderContainer from './components/HeaderContainer';
 // import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import FSM from './components/FSM';
+import FSM from './components/FSM';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
     //     </Switch>
     //   </BrowserRouter>
     // </>
-    // <FSM />
-    <HeaderContainer />
+    <FSM />
+    // <HeaderContainer />
   );
 }
 

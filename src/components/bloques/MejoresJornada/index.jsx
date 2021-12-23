@@ -5,18 +5,18 @@ import { useState, useEffect } from 'react';
 import { getFirestore } from "../../../firebase";
 import 'firebase/compat/firestore'
 
-import blackcode from './MEJORESJORNADA/BLACKCODE.png'
-import diegomc from './MEJORESJORNADA/DIEGOMC.png'
-import ghost from './MEJORESJORNADA/GHOST.png'
-import jairwong from './MEJORESJORNADA/JAIRWONG.png'
-import jaze from './MEJORESJORNADA/JAZE.png'
-import jota from './MEJORESJORNADA/JOTA.png'
-import kian from './MEJORESJORNADA/KIAN.png'
-import nekroos from './MEJORESJORNADA/NEKROOS.png'
-import skill from './MEJORESJORNADA/SKILL.png'
-import stick from './MEJORESJORNADA/STICK.png'
-import strike from './MEJORESJORNADA/STRIKE.png'
-import vijay from './MEJORESJORNADA/VIJAY.png'
+import katra from './MEJORESJORNADA/katra.png'
+import klan from './MEJORESJORNADA/KLAN.jpg'
+import larrix from './MEJORESJORNADA/LARRIX.jpg'
+import mecha from './MEJORESJORNADA/mecha.png'
+import mp from './MEJORESJORNADA/mp.png'
+import nacho from './MEJORESJORNADA/nacho.png'
+import naista from './MEJORESJORNADA/naista.png'
+import papo from './MEJORESJORNADA/papo.jpeg'
+import stuart from './MEJORESJORNADA/STUART.jpg'
+import tata from './MEJORESJORNADA/tata.png'
+import wolf from './MEJORESJORNADA/wolf.png'
+import zaina from './MEJORESJORNADA/ZAINA.jpg'
 import def from './MEJORESJORNADA/def.png'
 
 
@@ -34,18 +34,18 @@ const MejoresJornada = () => {
 
     const mc = (cat) => {
         switch(cat) {
-            case 'blackcode': return blackcode;
-            case 'diegomc': return diegomc;
-            case 'ghost': return ghost;
-            case 'jairwong': return jairwong;
-            case 'jaze': return jaze;
-            case 'jota': return jota;
-            case 'kian': return kian;
-            case 'nekroos': return nekroos;
-            case 'skill': return skill;
-            case 'stick': return stick;
-            case 'strike': return strike;
-            case 'vijay': return vijay;
+            case 'katra': return katra;
+            case 'klan': return klan;
+            case 'larrix': return larrix;
+            case 'mecha': return mecha;
+            case 'mp': return mp;
+            case 'nacho': return nacho;
+            case 'naista': return naista;
+            case 'papo': return papo;
+            case 'stuart': return stuart;
+            case 'tata': return tata;
+            case 'wolf': return wolf;
+            case 'zaina': return zaina;
             case 'def' : return def;
             default: return ptsCat[select];
         }
