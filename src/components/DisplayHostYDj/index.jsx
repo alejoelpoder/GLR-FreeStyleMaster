@@ -1,6 +1,6 @@
 import Item from '../general/Item'
-import dj_zone from './media/DJ-ZONE.png'
-import pluzuto from './media/PLUZITO.png'
+import bekaesh from './media/BEKAESH.png'
+import verse from './media/VERSE.png'
 // import { Switch, useParams } from "react-router";
 
 const DisplayHostYDj = () => {
@@ -19,8 +19,8 @@ const DisplayHostYDj = () => {
     // }
 
     const hostYDjPeru = [
-        {nombre: 'DJ-ZONE',foto: dj_zone},
-        {nombre: 'PLUZITO',foto: pluzuto},
+        {nombre: 'BEKAESH',foto: bekaesh},
+        {nombre: 'VERSE',foto: verse},
     ]
     
     return (

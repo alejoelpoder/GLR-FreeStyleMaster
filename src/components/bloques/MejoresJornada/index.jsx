@@ -5,18 +5,18 @@ import { useState, useEffect } from 'react';
 import { getFirestore } from "../../../firebase";
 import 'firebase/compat/firestore'
 
-import katra from './MEJORESJORNADA/katra.png'
-import klan from './MEJORESJORNADA/KLAN.jpg'
-import larrix from './MEJORESJORNADA/LARRIX.jpg'
-import mecha from './MEJORESJORNADA/mecha.png'
-import mp from './MEJORESJORNADA/mp.png'
-import nacho from './MEJORESJORNADA/nacho.png'
-import naista from './MEJORESJORNADA/naista.png'
-import papo from './MEJORESJORNADA/papo.jpeg'
-import stuart from './MEJORESJORNADA/STUART.jpg'
-import tata from './MEJORESJORNADA/tata.png'
-import wolf from './MEJORESJORNADA/wolf.png'
-import zaina from './MEJORESJORNADA/ZAINA.jpg'
+import blon from './MEJORESJORNADA/blon.png'
+import chuty from './MEJORESJORNADA/chuty.png'
+import elekipo from './MEJORESJORNADA/elekipo.png'
+import gazir from './MEJORESJORNADA/gazir.png'
+import hander from './MEJORESJORNADA/hander.png'
+import misterEgo from './MEJORESJORNADA/mister-ego.png'
+import mnak from './MEJORESJORNADA/mnak.png'
+import saraSocas from './MEJORESJORNADA/sara-socas.png'
+import skone from './MEJORESJORNADA/skone.png'
+import sweetPain from './MEJORESJORNADA/sweet-pain.png'
+import tirpa from './MEJORESJORNADA/tirpa.png'
+import zasko from './MEJORESJORNADA/zasko.png'
 import def from './MEJORESJORNADA/def.png'
 
 
@@ -34,18 +34,18 @@ const MejoresJornada = () => {
 
     const mc = (cat) => {
         switch(cat) {
-            case 'katra': return katra;
-            case 'klan': return klan;
-            case 'larrix': return larrix;
-            case 'mecha': return mecha;
-            case 'mp': return mp;
-            case 'nacho': return nacho;
-            case 'naista': return naista;
-            case 'papo': return papo;
-            case 'stuart': return stuart;
-            case 'tata': return tata;
-            case 'wolf': return wolf;
-            case 'zaina': return zaina;
+            case 'blon': return blon;
+            case 'chuty': return chuty;
+            case 'elekipo': return elekipo;
+            case 'gazir': return gazir;
+            case 'hander': return hander;
+            case 'misterEgo': return misterEgo;
+            case 'mnak': return mnak;
+            case 'saraSocas': return saraSocas;
+            case 'skone': return skone;
+            case 'sweetPain': return sweetPain;
+            case 'tirpa': return tirpa;
+            case 'zasko': return zasko;
             case 'def' : return def;
             default: return ptsCat[select];
         }
@@ -83,7 +83,7 @@ const MejoresJornada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection('ARGENTINA')
+        const traer = dbQuery.collection('ESPAÑA')
 
         traer.get().then(({docs}) => {
             setData(docs.map(doc => ({id: doc.id, ...doc.data()})))

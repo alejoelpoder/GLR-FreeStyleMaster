@@ -1,9 +1,9 @@
 import Item from '../general/Item'
-import cno from './media/CNO.png'
-import daro from './media/DARO.png'
-import infranich from './media/INFRANICH.png'
-import juan_ortelli from './media/JUAN-ORTELLI.png'
-import obie from './media/OBIE-ONE-SHOT.png'
+import babi from './media/BABI.png'
+import estrimo from './media/ESTRIMO.png'
+import noult from './media/NOULT.png'
+import piezas from './media/PIEZAS.png'
+import soen from './media/SOEN.png'
 // import { Switch, useParams } from "react-router";
 
 const DisplayJurado = () => {
@@ -22,11 +22,11 @@ const DisplayJurado = () => {
     // }
 
     const juradoPeru = [
-        {nombre: 'CNO',foto: cno},
-        {nombre: 'DARO',foto: daro},
-        {nombre: 'INFRANICH',foto: infranich},
-        {nombre: 'JUAN-ORTELLI',foto: juan_ortelli},
-        {nombre: 'OBIE-ONE-SHOT',foto: obie},
+        {nombre: 'BABI',foto: babi},
+        {nombre: 'ESTRIMO',foto: estrimo},
+        {nombre: 'NOULT',foto: noult},
+        {nombre: 'PIEZAS',foto: piezas},
+        {nombre: 'SOEN',foto: soen},
     ]
     
     return (
