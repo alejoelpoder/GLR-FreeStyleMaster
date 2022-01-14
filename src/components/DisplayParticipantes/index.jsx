@@ -3,35 +3,35 @@ import Item from '../general/Item'
 // import { useParams } from "react-router";
 // import Modal from '../Modal';
 import { useState } from 'react';
-import blon from './PARTICIPANTES/BLON.png'
-import chuty from './PARTICIPANTES/CHUTY.png'
-import elekipo from './PARTICIPANTES/ELEKIPO.png'
-import gazir from './PARTICIPANTES/GAZIR.png'
-import hander from './PARTICIPANTES/HANDER.png'
-import misterEgo from './PARTICIPANTES/MISTER-EGO.png'
-import mnak from './PARTICIPANTES/MNAK.png'
-import saraSocas from './PARTICIPANTES/SARA-SOCAS.png'
-import skone from './PARTICIPANTES/SKONE.png'
-import sweetPain from './PARTICIPANTES/SWEET-PAIN.png'
-import tirpa from './PARTICIPANTES/TIRPA.png'
-import zasko from './PARTICIPANTES/ZASKO.png'
+import blackcode from './PARTICIPANTES/BLACKCODE.jpg'
+import diegomc from './PARTICIPANTES/DIEGO-MC.jpg'
+import ghost from './PARTICIPANTES/GHOST.jpg'
+import jairwong from './PARTICIPANTES/JAIR-WONG.jpg'
+import jaze from './PARTICIPANTES/JAZE.jpg'
+import jota from './PARTICIPANTES/JOTA.jpg'
+import kian from './PARTICIPANTES/KIAN.jpg'
+import nekroos from './PARTICIPANTES/NEKROOS.jpg'
+import skilll from './PARTICIPANTES/SKILLL.jpg'
+import stick from './PARTICIPANTES/STICK.jpg'
+import strike from './PARTICIPANTES/STRIKE.jpg'
+import vijay from './PARTICIPANTES/VIJAY.jpg'
 
 
 const DisplayParticipantes = () => {
 
     const participantesArgentina = [
-        {nombre: 'BLON',foto: blon, nombreReal: 'Pablo Perez Rueda', edad: 30, anteriorTemporada: '7mo puesto'},
-        {nombre: 'CHUTY',foto: chuty, nombreReal: 'Sergio Castro Gisbert', edad: 28, anteriorTemporada: 'Invitado'},
-        {nombre: 'ELEKIPO',foto: elekipo, nombreReal: 'Said El Mazzouji López', edad: 27, anteriorTemporada: '2do puesto ascenso'},
-        {nombre: 'GAZIR',foto: gazir, nombreReal: 'Gabriel Sánchez', edad: 20, anteriorTemporada: '2do puesto'},
-        {nombre: 'HANDER',foto: hander, nombreReal: 'Andrés Gómez Toledo', edad: 27, anteriorTemporada: '3er puesto ascenso'},
-        {nombre: 'MISTER EGO',foto: misterEgo, nombreReal: 'Juan Miguel Ballesteros ', edad: 29, anteriorTemporada: '8vo puesto'},
-        {nombre: 'MNAK',foto: mnak, nombreReal: 'Ignacio Romero Montero', edad: 24, anteriorTemporada: '4to puesto'},
-        {nombre: 'SARA SOCAS',foto: saraSocas, nombreReal: 'Sara Socas Martín', edad: 24, anteriorTemporada: '1er puesto ascenso'},
-        {nombre: 'SKONE',foto: skone, nombreReal: 'José Miguel Manzano Bazalo', edad: 31, anteriorTemporada: 'Invitado'},
-        {nombre: 'SWEET PAIN',foto: sweetPain, nombreReal: 'José Manuel Rejón Rodríguez', edad: 24, anteriorTemporada: '3er puesto'},
-        {nombre: 'TIRPA',foto: tirpa, nombreReal: 'Damián Marín Caballero', edad: 23, anteriorTemporada: '6to puesto'},
-        {nombre: 'ZASKO',foto: zasko, nombreReal: 'Ginés Miñano Bernabéu', edad: 25, anteriorTemporada: '5to puesto'},
+        {nombre: 'BLACKCODE',foto: blackcode, nombreReal: 'Yofran Alexander Rivero Soto', edad: 25, anteriorTemporada: '3er puesto ascenso'},
+        {nombre: 'DIEGO MC',foto: diegomc, nombreReal: 'Diego Verano', edad: 22, anteriorTemporada: '2do puesto ascenso'},
+        {nombre: 'GHOST',foto: ghost, nombreReal: 'Roy Roger Ávila Pérez', edad: 20, anteriorTemporada: 'Clasificado 2021'},
+        {nombre: 'JAIR WONG',foto: jairwong, nombreReal: 'Jair Wong', edad: 25, anteriorTemporada: '1er puesto ascenso'},
+        {nombre: 'JAZE',foto: jaze, nombreReal: 'Juan Carlos Iwasaki La Puente', edad: 21, anteriorTemporada: '1er puesto'},
+        {nombre: 'JOTA',foto: jota, nombreReal: 'Juan José Leyva Serrano', edad: 26, anteriorTemporada: '3er puesto'},
+        {nombre: 'KIAN',foto: kian, nombreReal: 'Enrique Chumpitaz', edad: 21, anteriorTemporada: 'Clasificado 2021'},
+        {nombre: 'NEKROOS',foto: nekroos, nombreReal: 'Cristopher Johansen García Orbezo', edad: 23, anteriorTemporada: '6to puesto'},
+        {nombre: 'SKILLL',foto: skilll, nombreReal: 'Alberth Christopher Ferro Rodríguez', edad: 19, anteriorTemporada: '5to puesto'},
+        {nombre: 'STICK',foto: stick, nombreReal: 'Jordy Stick Renteria Reyes', edad: 25, anteriorTemporada: '2do puesto'},
+        {nombre: 'STRIKE',foto: strike, nombreReal: 'Diego Escobar', edad: 20, anteriorTemporada: '4to puesto'},
+        {nombre: 'VIJAY',foto: vijay, nombreReal: 'Richard Vijay Rajoo', edad: 21, anteriorTemporada: '7mo puesto'},
     ]
 
     const [modal, setModal] = useState({})

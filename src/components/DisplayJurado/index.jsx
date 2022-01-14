@@ -1,9 +1,9 @@
 import Item from '../general/Item'
-import babi from './media/BABI.png'
-import estrimo from './media/ESTRIMO.png'
-import noult from './media/NOULT.png'
-import piezas from './media/PIEZAS.png'
-import soen from './media/SOEN.png'
+import fox from './media/FOX.jpg'
+import gcr from './media/GCR.jpg'
+import hbd from './media/HBD.jpg'
+import joro from './media/JORO.jpg'
+import vellutino from './media/VELLUTINO.jpg'
 // import { Switch, useParams } from "react-router";
 
 const DisplayJurado = () => {
@@ -22,11 +22,11 @@ const DisplayJurado = () => {
     // }
 
     const juradoPeru = [
-        {nombre: 'BABI',foto: babi},
-        {nombre: 'ESTRIMO',foto: estrimo},
-        {nombre: 'NOULT',foto: noult},
-        {nombre: 'PIEZAS',foto: piezas},
-        {nombre: 'SOEN',foto: soen},
+        {nombre: 'FOX',foto: fox},
+        {nombre: 'GCR',foto: gcr},
+        {nombre: 'HBD',foto: hbd},
+        {nombre: 'JORO',foto: joro},
+        {nombre: 'VELLUTINO',foto: vellutino},
     ]
     
     return (
