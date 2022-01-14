@@ -5,18 +5,18 @@ import { useState, useEffect } from 'react';
 import { getFirestore } from "../../../firebase";
 import 'firebase/compat/firestore'
 
-import blackcode from './MEJORESJORNADA/BLACKCODE.jpeg'
-import diegomc from './MEJORESJORNADA/DIEGOMC.jpeg'
-import ghost from './MEJORESJORNADA/GHOST.jpeg'
-import jairwong from './MEJORESJORNADA/JAIRWONG.jpeg'
-import jaze from './MEJORESJORNADA/JAZE.jpeg'
-import jota from './MEJORESJORNADA/JOTA.jpeg'
-import kian from './MEJORESJORNADA/KIAN.jpeg'
-import nekroos from './MEJORESJORNADA/NEKROOS.jpeg'
-import skilll from './MEJORESJORNADA/SKILL.jpeg'
-import stick from './MEJORESJORNADA/STICK.jpeg'
-import strike from './MEJORESJORNADA/STRIKE.jpeg'
-import vijay from './MEJORESJORNADA/VIJAY.jpeg'
+import katra from './MEJORESJORNADA/KATRA.png'
+import klan from './MEJORESJORNADA/KLAN.jpg'
+import larrix from './MEJORESJORNADA/LARRIX.jpg'
+import mecha from './MEJORESJORNADA/MECHA.png'
+import mp from './MEJORESJORNADA/MP.png'
+import nacho from './MEJORESJORNADA/NACHO.png'
+import naista from './MEJORESJORNADA/NAISTA.png'
+import papo from './MEJORESJORNADA/PAPO.jpeg'
+import stuart from './MEJORESJORNADA/STUART.jpg'
+import tata from './MEJORESJORNADA/TATA.png'
+import wolf from './MEJORESJORNADA/WOLF.png'
+import zaina from './MEJORESJORNADA/ZAINA.jpg'
 import def from './MEJORESJORNADA/def.png'
 
 
@@ -34,18 +34,18 @@ const MejoresJornada = () => {
 
     const mc = (cat) => {
         switch(cat) {
-            case 'blackcode': return blackcode;
-            case 'diegomc': return diegomc;
-            case 'ghost': return ghost;
-            case 'jairwong': return jairwong;
-            case 'jaze': return jaze;
-            case 'jota': return jota;
-            case 'kian': return kian;
-            case 'nekroos': return nekroos;
-            case 'skilll': return skilll;
-            case 'stick': return stick;
-            case 'strike': return strike;
-            case 'vijay': return vijay;
+            case 'katra': return katra;
+            case 'klan': return klan;
+            case 'larrix': return larrix;
+            case 'mecha': return mecha;
+            case 'mp': return mp;
+            case 'nacho': return nacho;
+            case 'naista': return naista;
+            case 'papo': return papo;
+            case 'stuart': return stuart;
+            case 'tata': return tata;
+            case 'wolf': return wolf;
+            case 'zaina': return zaina;
             case 'def' : return def;
             default: return ptsCat[select];
         }
@@ -83,7 +83,7 @@ const MejoresJornada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection('PERU')
+        const traer = dbQuery.collection('ARGENTINA')
 
         traer.get().then(({docs}) => {
             setData(docs.map(doc => ({id: doc.id, ...doc.data()})))

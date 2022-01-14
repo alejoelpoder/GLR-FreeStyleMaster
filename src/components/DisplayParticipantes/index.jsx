@@ -3,35 +3,35 @@ import Item from '../general/Item'
 // import { useParams } from "react-router";
 // import Modal from '../Modal';
 import { useState } from 'react';
-import blackcode from './PARTICIPANTES/BLACKCODE.jpg'
-import diegomc from './PARTICIPANTES/DIEGO-MC.jpg'
-import ghost from './PARTICIPANTES/GHOST.jpg'
-import jairwong from './PARTICIPANTES/JAIR-WONG.jpg'
-import jaze from './PARTICIPANTES/JAZE.jpg'
-import jota from './PARTICIPANTES/JOTA.jpg'
-import kian from './PARTICIPANTES/KIAN.jpg'
-import nekroos from './PARTICIPANTES/NEKROOS.jpg'
-import skilll from './PARTICIPANTES/SKILLL.jpg'
-import stick from './PARTICIPANTES/STICK.jpg'
-import strike from './PARTICIPANTES/STRIKE.jpg'
-import vijay from './PARTICIPANTES/VIJAY.jpg'
+import katra from './PARTICIPANTES/KATRA.png'
+import klan from './PARTICIPANTES/KLAN.png'
+import larrix from './PARTICIPANTES/LARRIX.png'
+import mecha from './PARTICIPANTES/MECHA.png'
+import mp from './PARTICIPANTES/MP.png'
+import nacho from './PARTICIPANTES/NACHO.png'
+import naista from './PARTICIPANTES/NAISTA.png'
+import papo from './PARTICIPANTES/PAPO.png'
+import stuart from './PARTICIPANTES/STUART.png'
+import tata from './PARTICIPANTES/TATA.png'
+import wolf from './PARTICIPANTES/WOLF.png'
+import zaina from './PARTICIPANTES/ZAINA.png'
 
 
 const DisplayParticipantes = () => {
 
     const participantesArgentina = [
-        {nombre: 'BLACKCODE',foto: blackcode, nombreReal: 'Yofran Alexander Rivero Soto', edad: 25, anteriorTemporada: '3er puesto ascenso'},
-        {nombre: 'DIEGO MC',foto: diegomc, nombreReal: 'Diego Verano', edad: 22, anteriorTemporada: '2do puesto ascenso'},
-        {nombre: 'GHOST',foto: ghost, nombreReal: 'Roy Roger Ávila Pérez', edad: 20, anteriorTemporada: 'Clasificado 2021'},
-        {nombre: 'JAIR WONG',foto: jairwong, nombreReal: 'Jair Wong', edad: 25, anteriorTemporada: '1er puesto ascenso'},
-        {nombre: 'JAZE',foto: jaze, nombreReal: 'Juan Carlos Iwasaki La Puente', edad: 21, anteriorTemporada: '1er puesto'},
-        {nombre: 'JOTA',foto: jota, nombreReal: 'Juan José Leyva Serrano', edad: 26, anteriorTemporada: '3er puesto'},
-        {nombre: 'KIAN',foto: kian, nombreReal: 'Enrique Chumpitaz', edad: 21, anteriorTemporada: 'Clasificado 2021'},
-        {nombre: 'NEKROOS',foto: nekroos, nombreReal: 'Cristopher Johansen García Orbezo', edad: 23, anteriorTemporada: '6to puesto'},
-        {nombre: 'SKILLL',foto: skilll, nombreReal: 'Alberth Christopher Ferro Rodríguez', edad: 19, anteriorTemporada: '5to puesto'},
-        {nombre: 'STICK',foto: stick, nombreReal: 'Jordy Stick Renteria Reyes', edad: 25, anteriorTemporada: '2do puesto'},
-        {nombre: 'STRIKE',foto: strike, nombreReal: 'Diego Escobar', edad: 20, anteriorTemporada: '4to puesto'},
-        {nombre: 'VIJAY',foto: vijay, nombreReal: 'Richard Vijay Rajoo', edad: 21, anteriorTemporada: '7mo puesto'},
+        {nombre: 'KATRA',foto: katra, nombreReal: 'Gonzalo Joaquin Tarillo', edad: 23, anteriorTemporada: 'Clasificado 2021'},
+        {nombre: 'KLAN',foto: klan, nombreReal: 'Lucas Matías Santo', edad: 27, anteriorTemporada: '4to puesto'},
+        {nombre: 'LARRIX',foto: larrix, nombreReal: 'Lucas Larrazabal', edad: 21, anteriorTemporada: '2do puesto ascenso'},
+        {nombre: 'MECHA',foto: mecha, nombreReal: 'Thomas Nahuel Antonelli', edad: 20, anteriorTemporada: '3er puesto'},
+        {nombre: 'MP',foto: mp, nombreReal: 'Miguel Alfredo Pérez', edad: 21, anteriorTemporada: 'Clasificado 2021'},
+        {nombre: 'NACHO',foto: nacho, nombreReal: 'Ignacio Agustín Castro', edad: 22, anteriorTemporada: '5to puesto'},
+        {nombre: 'NAISTA',foto: naista, nombreReal: 'Yamil Durán', edad: 21, anteriorTemporada: '1er puesto ascenso'},
+        {nombre: 'PAPO',foto: papo, nombreReal: 'Alejandro Andrés Lococo', edad: 29, anteriorTemporada: '2do puesto'},
+        {nombre: 'STUART',foto: stuart, nombreReal: 'Ramiro José Verdoljak', edad: 26, anteriorTemporada: '1er puesto'},
+        {nombre: 'TATA',foto: tata, nombreReal: 'Cristian Javier Sosa ', edad: 33, anteriorTemporada: 'Clasificado 2021'},
+        {nombre: 'WOLF',foto: wolf, nombreReal: 'Carlos Damian Mansilla', edad: 26, anteriorTemporada: '6to puesto'},
+        {nombre: 'ZAINA',foto: zaina, nombreReal: 'Lautaro Saina', edad: 18, anteriorTemporada: '3er puesto ascenso'},
     ]
 
     const [modal, setModal] = useState({})

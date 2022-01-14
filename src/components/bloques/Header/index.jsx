@@ -53,17 +53,17 @@ const Header = () => {
                             <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle/' rel="noreferrer">HOME</a>
                         </li>
                         <li>
-                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-espana/' rel="noreferrer">FMS ESPAÑA</a>
+                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-peru/' rel="noreferrer">FMS PERU</a>
                         </li>
                         <li>
-                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-argentina/' rel="noreferrer">FMS ARGENTINA</a>
+                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-espana/' rel="noreferrer">FMS ESPAÑA</a>
                         </li>
                     </ul>
                 </nav>
                 {/* {
                     imagenTitulo(pais)
                 } */}
-                <img src={`.${titulo_peru}`} alt="título" />
+                <img src={`.${titulo_argentina}`} alt="título" />
                 <p className='bajada'>Repasa toda la información jornada tras jornada de la Freestyle Master Series.</p>
                 {/* <p className={`ultima-fecha-${pais}`}>ACTUALIZADO AL 19-AGOSTO-2021 - 03:17 P. M.</p> */}
             </header>
