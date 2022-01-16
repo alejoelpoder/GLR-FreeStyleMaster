@@ -1,9 +1,9 @@
 import Item from '../general/Item'
-import cno from './media/CNO.png'
-import daro from './media/DARO.png'
-import infranich from './media/INFRANICH.png'
-import juan_ortelli from './media/JUAN-ORTELLI.png'
-import obie from './media/OBIE-ONE-SHOT.png'
+import danger from './media/DANGER.png'
+import eric from './media/ERIC-EL-NIÑO.png'
+import gino from './media/GINO.png'
+import k from './media/K-ROAD.png'
+import potencia from './media/POTENCIA.png'
 // import { Switch, useParams } from "react-router";
 
 const DisplayJurado = () => {
@@ -22,11 +22,11 @@ const DisplayJurado = () => {
     // }
 
     const juradoPeru = [
-        {nombre: 'CNO',foto: cno},
-        {nombre: 'DARO',foto: daro},
-        {nombre: 'INFRANICH',foto: infranich},
-        {nombre: 'JUAN-ORTELLI',foto: juan_ortelli},
-        {nombre: 'OBIE-ONE-SHOT',foto: obie},
+        {nombre: 'DANGER',foto: danger},
+        {nombre: 'ERIC EL NIÑO',foto: eric},
+        {nombre: 'GINO',foto: gino},
+        {nombre: 'K-ROAD',foto: k},
+        {nombre: 'POTENCIA',foto: potencia},
     ]
     
     return (

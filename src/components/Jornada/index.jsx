@@ -40,7 +40,7 @@ const Jornada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection("ARGENTINA")
+        const traer = dbQuery.collection("MEXICO")
         
 
         traer.get().then(({docs}) => {
@@ -60,7 +60,7 @@ const Jornada = () => {
         <>
             <div className="jornada-container">
                 <form action="">
-                    <select id="jornada-select" className={`jornada-select-argentina`} onChange={cambiarJornada}>
+                    <select id="jornada-select" className={`jornada-select-mexico`} onChange={cambiarJornada}>
 
                             {
                                 data.length?

@@ -3,35 +3,35 @@ import Item from '../general/Item'
 // import { useParams } from "react-router";
 // import Modal from '../Modal';
 import { useState } from 'react';
-import katra from './PARTICIPANTES/KATRA.png'
-import klan from './PARTICIPANTES/KLAN.png'
-import larrix from './PARTICIPANTES/LARRIX.png'
-import mecha from './PARTICIPANTES/MECHA.png'
-import mp from './PARTICIPANTES/MP.png'
-import nacho from './PARTICIPANTES/NACHO.png'
-import naista from './PARTICIPANTES/NAISTA.png'
-import papo from './PARTICIPANTES/PAPO.png'
-import stuart from './PARTICIPANTES/STUART.png'
-import tata from './PARTICIPANTES/TATA.png'
-import wolf from './PARTICIPANTES/WOLF.png'
-import zaina from './PARTICIPANTES/ZAINA.png'
+import aczino from './PARTICIPANTES/ACZINO.png'
+import dante from './PARTICIPANTES/DANTE.png'
+import dominic from './PARTICIPANTES/DOMINIC.png'
+import garza from './PARTICIPANTES/GARZA.png'
+import jonyBeltran from './PARTICIPANTES/JONY-BELTRAN.png'
+import lancerLirical from './PARTICIPANTES/LANCER-LIRICAL.png'
+import loboEstepario from './PARTICIPANTES/LOBO-ESTEPARIO.png'
+import rapder from './PARTICIPANTES/RAPDER.png'
+import rc from './PARTICIPANTES/RC.png'
+import skiper from './PARTICIPANTES/SKIPER.png'
+import yoiker from './PARTICIPANTES/YOIKER.png'
+import zticma from './PARTICIPANTES/ZTICMA.png'
 
 
 const DisplayParticipantes = () => {
 
     const participantesArgentina = [
-        {nombre: 'KATRA',foto: katra, nombreReal: 'Gonzalo Joaquin Tarillo', edad: 23, anteriorTemporada: 'Clasificado 2021'},
-        {nombre: 'KLAN',foto: klan, nombreReal: 'Lucas Matías Santo', edad: 27, anteriorTemporada: '4to puesto'},
-        {nombre: 'LARRIX',foto: larrix, nombreReal: 'Lucas Larrazabal', edad: 21, anteriorTemporada: '2do puesto ascenso'},
-        {nombre: 'MECHA',foto: mecha, nombreReal: 'Thomas Nahuel Antonelli', edad: 20, anteriorTemporada: '3er puesto'},
-        {nombre: 'MP',foto: mp, nombreReal: 'Miguel Alfredo Pérez', edad: 21, anteriorTemporada: 'Clasificado 2021'},
-        {nombre: 'NACHO',foto: nacho, nombreReal: 'Ignacio Agustín Castro', edad: 22, anteriorTemporada: '5to puesto'},
-        {nombre: 'NAISTA',foto: naista, nombreReal: 'Yamil Durán', edad: 21, anteriorTemporada: '1er puesto ascenso'},
-        {nombre: 'PAPO',foto: papo, nombreReal: 'Alejandro Andrés Lococo', edad: 29, anteriorTemporada: '2do puesto'},
-        {nombre: 'STUART',foto: stuart, nombreReal: 'Ramiro José Verdoljak', edad: 26, anteriorTemporada: '1er puesto'},
-        {nombre: 'TATA',foto: tata, nombreReal: 'Cristian Javier Sosa ', edad: 33, anteriorTemporada: 'Clasificado 2021'},
-        {nombre: 'WOLF',foto: wolf, nombreReal: 'Carlos Damian Mansilla', edad: 26, anteriorTemporada: '6to puesto'},
-        {nombre: 'ZAINA',foto: zaina, nombreReal: 'Lautaro Saina', edad: 18, anteriorTemporada: '3er puesto ascenso'},
+        {nombre: 'ACZINO',foto: aczino, nombreReal: 'Mauricio Hernández', edad: 30, anteriorTemporada: 'Invitado'},
+        {nombre: 'DANTE',foto: dante, nombreReal: 'Jaime Domínguez', edad: 23, anteriorTemporada: 'Ascenso'},
+        {nombre: 'DOMINIC',foto: dominic, nombreReal: 'Gerardo Ramírez', edad: 24, anteriorTemporada: 'Invitado'},
+        {nombre: 'GARZA',foto: garza, nombreReal: 'Jorge Garza', edad: 25, anteriorTemporada: '5to puesto'},
+        {nombre: 'JONY BELTRAN',foto: jonyBeltran, nombreReal: 'Jonathan Beltrán', edad: 27, anteriorTemporada: '8vo puesto'},
+        {nombre: 'LANCER LIRICAL',foto: lancerLirical, nombreReal: 'Junior Gámez', edad: 28, anteriorTemporada: 'Ascenso'},
+        {nombre: 'LOBO ESTEPARIO',foto: loboEstepario, nombreReal: 'Ibsan Cueva', edad: 31, anteriorTemporada: '4to puesto'},
+        {nombre: 'RAPDER',foto: rapder, nombreReal: 'Eder Lozano', edad: 26, anteriorTemporada: '1er puesto'},
+        {nombre: 'RC',foto: rc, nombreReal: 'Abner Cruz', edad: 28, anteriorTemporada: '2do puesto'},
+        {nombre: 'SKIPER',foto: skiper, nombreReal: 'Alan Ramírez', edad: 28, anteriorTemporada: '3er puesto'},
+        {nombre: 'YOIKER',foto: yoiker, nombreReal: 'José Toporek', edad: 24, anteriorTemporada: '6to puesto'},
+        {nombre: 'ZTICMA',foto: zticma, nombreReal: 'Nestor Castillo', edad: 28, anteriorTemporada: '7mo puesto'},
     ]
 
     const [modal, setModal] = useState({})

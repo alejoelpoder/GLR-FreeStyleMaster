@@ -13,7 +13,7 @@ const BatallaRecomendada = () => {
 
     useEffect(() => {
         const dbQuery = getFirestore()
-        const traer = dbQuery.collection('ARGENTINA')
+        const traer = dbQuery.collection('MEXICO')
 
         traer.get().then(({ docs }) => {
             setData(docs.map((doc) => ({ id: doc.id, ...doc.data() })))

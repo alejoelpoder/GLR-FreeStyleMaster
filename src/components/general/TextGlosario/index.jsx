@@ -8,7 +8,7 @@ const TextGlosario = ({titElement, contentElement}) => {
     return (
         <>
             <div className="glosario-container">
-                <p className="glosario-text"><span className={`glosario-tit glosario-tit-argentina`}>{`${titElement}: `}</span>{contentElement}</p>
+                <p className="glosario-text"><span className={`glosario-tit glosario-tit-mexico`}>{`${titElement}: `}</span>{contentElement}</p>
             </div>
         </>
     )
