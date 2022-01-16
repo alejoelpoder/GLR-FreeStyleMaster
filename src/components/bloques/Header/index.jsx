@@ -58,6 +58,9 @@ const Header = () => {
                         <li>
                             <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-espana/' rel="noreferrer">FMS ESPAÑA</a>
                         </li>
+                        <li>
+                            <a href='https://especiales.larepublica.pe/fms-noticias-y-estadisticas-sobre-freestyle-mexico/' rel="noreferrer">FMS MEXICO</a>
+                        </li>
                     </ul>
                 </nav>
                 {/* {
