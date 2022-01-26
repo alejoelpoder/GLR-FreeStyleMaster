@@ -27,7 +27,7 @@ const Jornada = () => {
             case '10': return data[1];
             case '11': return data[2];
             case '12': return data[3];
-            default: return data[4];
+            default: return data[5];
         }
     }
 

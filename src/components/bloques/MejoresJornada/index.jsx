@@ -42,7 +42,7 @@ const MejoresJornada = () => {
             case 'jota': return jota;
             case 'kian': return kian;
             case 'nekroos': return nekroos;
-            case 'skilll': return skilll;
+            case 'skill': return skilll;
             case 'stick': return stick;
             case 'strike': return strike;
             case 'vijay': return vijay;
@@ -65,7 +65,7 @@ const MejoresJornada = () => {
             case '10': return data[1];
             case '11': return data[2];
             case '12': return data[3];
-            default: return data[4];
+            default: return data[5];
         }
     }
 
